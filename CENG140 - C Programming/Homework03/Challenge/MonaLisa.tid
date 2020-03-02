@@ -1,0 +1,28 @@
+#------------------------------------------------------------------------------
+# Artist  : Selim Temizer
+# Artwork : Mona Lisa
+#------------------------------------------------------------------------------
+Image 265 385 MonaLisa.ppm
+SetColor 255 255 255
+Clear
+#------------------------------------------------------------------------------
+
+# Challenge Instructions:
+# -----------------------
+#
+# - Replace artist's name with your own full name (use only ASCII characters)
+# - Do not modify anything else above
+# - Just fill in your image commands below
+#
+# Note:
+# -----
+#
+# There is a way to exactly replicate Mona Lisa by using only "SetColor"
+# and "Point" commands to create the whole painting pixel by pixel, but we
+# will consider this as cheating. Therefore, do NOT paint Mona Lisa in a
+# pixel-by-pixel fashion. Be creative. The shortest image description that
+# resembles Mona Lisa the most is the ultimate goal.
+
+# TODO
+
+#------------------------------------------------------------------------------

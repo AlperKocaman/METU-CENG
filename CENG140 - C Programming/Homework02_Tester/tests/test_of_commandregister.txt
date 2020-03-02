@@ -1,0 +1,15 @@
+register abcdefghjklmnoprsty
+register 
+register a1
+register a2
+register a3
+register a4
+register a5
+register a6
+register a7
+register a8
+register a9
+register a10
+register a11
+list
+quit

@@ -1,0 +1,36 @@
+register a1 
+register a2
+register a3
+register a4
+register a5 
+list
+connect a1 a2
+connect a1 a3
+connect a1 a4
+connect a1 a5
+connect a2 a1
+connect a3 a1
+connect a4 a1
+connect a5 a1
+list
+find a1
+find a2
+find a3
+find a4
+find a5
+delete a6
+delete a1
+disconnect a5 a6
+disconnect a2 a3
+connect a3 a4
+connect a4 a5
+disconnect a5 a4
+/*disconnect */
+disconnect a4 a5 
+find a4
+find a3
+find a5
+list 
+disconnect a3 a4 
+list
+quit

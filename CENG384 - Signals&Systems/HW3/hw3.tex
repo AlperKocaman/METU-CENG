@@ -1,0 +1,360 @@
+\documentclass[10pt,a4paper, margin=1in]{article}
+\usepackage{fullpage}
+\usepackage{amsfonts, amsmath, pifont}
+\usepackage{amsthm}
+\usepackage{graphicx}
+
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.13}
+\usepackage{float}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=10mm,
+ right=10mm,
+ top=10mm,
+ bottom=10mm,
+ }
+ % Write both of your names here. Fill exxxxxxx with your ceng mail address.
+\author{
+  BAYKARA, Azad\\
+  \texttt{e2171320@ceng.metu.edu.tr}
+  \and
+  KOCAMAN, Alper\\
+  \texttt{e2169589@ceng.metu.edu.tr}
+}
+\title{CENG 384 - Signals and Systems for Computer Engineers \\
+Spring 2018-2019 \\
+Written Assignment 3}
+\begin{document}
+\maketitle
+
+
+
+\noindent\rule{19cm}{1.2pt}
+
+\begin{enumerate}
+
+\item 
+    \begin{enumerate}
+    % Write your solutions in the following items.
+    \item %write the solution of q1a
+From graph, this signal's period is 4.Therefore,
+$$\omega_0\ =\ \frac{2\pi}{4}\ = \ \frac{\pi}{2} $$
+The general formula for spectral coefficients is $$ \frac{1}{N}\sum_{n=<N>}^{} x[n](e^{-jk\omega_0 n})$$
+Over one period of summation ( [0,3] interval is choosen) is:
+$$ \frac{1}{4}x[0]\ + \  \frac{1}{4}x[1]e^{-jk\omega_0}\ + \   \frac{1}{4}x[2]e^{-2jk\omega_0}\ + \  \frac{1}{4}x[3]e^{-3jk\omega_0}$$.\\
+$$ 0\ + \  \frac{1}{4}e^{-jk\omega_0}\ + \   \frac{1}{2}e^{-2jk\omega_0}\ + \  \frac{1}{4}e^{-3jk\omega_0}$$
+$$0\ + \frac{1}{4}(cos(k \pi /2)-jsin(k \pi /2))\ + \frac{1}{2}(cos(k \pi)-jsin(k \pi))\ + \frac{1}{4}(cos(3k \pi /2)-jsin(3k \pi /2))$$
+Thus,
+$$ a_0\ =\ 0\ + 1/4\ +\ 1/2\ +\ 1/4\ =\ 1 $$
+$$ a_1\ =\ 0\ - j/4\ -\ 1/2\ +\ j/4\ =\ -1/2 $$
+$$ a_2\ =\ 0\ - 1/4\ +\ 1/2\ -\ 1/4\ =\ 0 $$
+$$ a_3\ =\ 0\ + j/4\ -\ 1/2\ -\ j/4\ =\ -1/2 $$
+
+The magnitude of spectral coefficients:
+
+\begin{figure} [H]
+	\ldots
+    \centering
+    \begin{tikzpicture}[scale=1.0] 
+      \begin{axis}[
+          axis lines=middle,
+          xlabel={$k$},
+          ylabel={$\boldsymbol{|a_k|}$},
+          xtick={ -3,-2,-1, 0, ..., 4},
+          ytick={ 0,0.5,1,1.5},
+          ymin=0, ymax=1.5,
+          xmin=-3, xmax=4,
+          every axis x label/.style={at={(ticklabel* cs:1.05)}, anchor=west,},
+          every axis y label/.style={at={(ticklabel* cs:1.05)}, anchor=south,},
+          grid,
+        ]
+        \addplot [ycomb, black, thick, mark=*] table [x={n}, y={xn}] {q1a.dat};
+      \end{axis}
+    \end{tikzpicture}
+    \ldots
+    \caption{$k$ vs. $|a_k|$.}
+    \label{fig:q3}
+\end{figure}
+
+Phase of the spectral coefficients:
+
+\begin{figure} [H]
+	\ldots
+    \centering
+    \begin{tikzpicture}[scale=1.0] 
+      \begin{axis}[
+          axis lines=middle,
+          xlabel={$k$},
+          ylabel={$\boldsymbol{\angle a_k}$},
+          xtick={ -3,-2,-1, 0, ..., 4},
+          ytick={ 0,1,2,3},
+           yticklabels={ 0, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$},
+          ymin=0, ymax=3,
+          xmin=-3, xmax=4,
+          every axis x label/.style={at={(ticklabel* cs:1.05)}, anchor=west,},
+          every axis y label/.style={at={(ticklabel* cs:1.05)}, anchor=south,},
+          grid,
+        ]
+        \addplot [ycomb, black, thick, mark=*] table [x={n}, y={xn}] {q1b.dat};
+      \end{axis}
+    \end{tikzpicture}
+    \ldots
+    \caption{$k$ vs. $\angle a_k$.}
+    \label{fig:q3}
+\end{figure}
+
+    \item %write the solution of q1b
+    
+i. $y[n]$ graph is the same as $x[n]$ graph at 3 points in a period. At only 1 point where n equals to $(4k\ -1)$ and k is in interval $(-\infty\ ,\ \infty)$, these 2 graphs are different in a period.\\For these n values, $x[n]$ is 1 and $y[n]$ is 0.\\ Therefore, in order to define $y[n]$ in terms of $x[n]$ , 1 should be subtracted from x in these n values.
+$$\sum_{k=-\infty}^{\infty} \delta[n\ - (4k-1)]\ =\ \sum_{k=-\infty}^{\infty} \delta[n+1\ -4k] $$ is the required term.\\\\
+Definition of $y[n]$ in terms of $x[n]$ is:
+$$ y[n]\ =\ x[n]\ -\ \sum_{k=-\infty}^{\infty} \delta[n+1\ -4k]  $$
+ii. From graph, this signal's period is 4.Therefore,
+$$\omega_0\ =\ \frac{2\pi}{4}\ = \ \frac{\pi}{2} $$
+The general formula for spectral coefficients is $$ \frac{1}{N}\sum_{n=<N>}^{} x[n](e^{-jk\omega_0 n})$$
+Over one period of summation ( [0,3] interval is choosen) is:
+$$ \frac{1}{4}x[0]\ + \  \frac{1}{4}x[1]e^{-jk\omega_0}\ + \   \frac{1}{4}x[2]e^{-2jk\omega_0}\ + \  \frac{1}{4}x[3]e^{-3jk\omega_0}$$.\\
+$$ 0\ + \  \frac{1}{4}e^{-jk\omega_0}\ + \   \frac{1}{2}e^{-2jk\omega_0}\ + \  0$$
+$$0\ + \frac{1}{4}(cos(k \pi /2)-jsin(k \pi /2))\ + \frac{1}{2}(cos(k \pi)-jsin(k \pi))\ + 0$$
+Thus,
+$$ a_0\ =\ 0\ + 1/4\ +\ 1/2\ +\ 0\ =\ 3/4 $$
+$$ a_1\ =\ 0\ - j/4\ -\ 1/2\ +\ 0\ =\ -j/4\ -1/2 $$
+$$ a_2\ =\ 0\ - 1/4\ +\ 1/2\ +\ 0\ =\ 1/4 $$
+$$ a_3\ =\ 0\ + j/4\ -\ 1/2\ +\ 0\ =\ j/4\ -1/2 $$
+
+The magnitude of spectral coefficients:
+
+\begin{figure} [H]
+	\ldots
+    \centering
+    \begin{tikzpicture}[scale=1.0] 
+      \begin{axis}[
+          axis lines=middle,
+          xlabel={$k$},
+          ylabel={$\boldsymbol{|a_k|}$},
+          xtick={ -3,-2,-1, 0, ..., 4},
+          ytick={ 0,1,2,3},
+          yticklabels={ 0, $\frac{1}{4}$, $\frac{\sqrt{5}}{4}$, $\frac{3}{4}$},
+          ymin=0, ymax=3,
+          xmin=-3, xmax=4,
+          every axis x label/.style={at={(ticklabel* cs:1.05)}, anchor=west,},
+          every axis y label/.style={at={(ticklabel* cs:1.05)}, anchor=south,},
+          grid,
+        ]
+        \addplot [ycomb, black, thick, mark=*] table [x={n}, y={xn}] {q1d.dat};
+      \end{axis}
+    \end{tikzpicture}
+	\ldots    
+    \caption{$k$ vs. $|a_k|$.}
+    \label{fig:q3}
+\end{figure}
+
+Phase of spectral coefficients:
+
+\begin{figure} [H]
+	\ldots
+    \centering
+    \begin{tikzpicture}[scale=1.0] 
+      \begin{axis}[
+          axis lines=middle,
+          xlabel={$k$},
+          ylabel={$\boldsymbol{\angle a_k}$},
+          xtick={ -3,-2,-1, 0, ..., 4},
+          ytick={ -3,-2,0,2,3},
+           yticklabels={ -$\pi$,-$0.85\pi$,0, $0.85\pi$, $\pi$},
+          ymin=-3, ymax=3,
+          xmin=-3, xmax=4,
+          every axis x label/.style={at={(ticklabel* cs:1.05)}, anchor=west,},
+          every axis y label/.style={at={(ticklabel* cs:1.05)}, anchor=south,},
+          grid,
+        ]
+        \addplot [ycomb, black, thick, mark=*] table [x={n}, y={xn}] {q1c.dat};
+      \end{axis}
+    \end{tikzpicture}
+    \ldots
+    \caption{$k$ vs. $\angle a_k$.}
+    \label{fig:q3}
+\end{figure}
+
+    
+    \end{enumerate}
+
+
+\item %write the solution of q2
+
+This discrete signal has following properties:\\
+
+$\rightarrow$ Its period should be 4.\\
+So $$\omega_0\ =\ \frac{2\pi}{4}\ = \ \frac{\pi}{2} $$ \\
+$\rightarrow$  From $(-3)$ to $4$ , there are 2 full periods.Instead of that interval , if [0,3] interval is taken \\
+$$\sum_{n=0}^{3} x[n] = 4$$
+$$ x[0]+x[1]+x[2]+x[3] \ = \ 4$$
+$\rightarrow$ Since periodicity is 4 , $$a_{-3} = a_{1}$$ $$a_{3} \ = \ a_{11}$$.\\
+$\rightarrow$ One of the $a_{k}$ is 0. \\
+$\rightarrow$ From e) $$ e^{-j\pi k/2}\ = \ cos(-\pi k/2) +jsin(-\pi k/2) \ = \ cos(\pi k/2) -jsin(\pi k/2) $$ 
+$$ e^{-j\pi 3k/2}\ = \ cos(-\pi 3k/2) +jsin(-\pi 3k/2) \ = \ cos(\pi 3k/2) -jsin(\pi 3k/2) $$\\
+$\pi/2 $ and $3\pi /2$ are related frequency components:
+$$ sin(\pi 3k/2) \ = \ sin(\pi 3k/2 \ -2\pi k) \ = \ sin(-\pi k/2) \ = \ -sin(\pi k/2) $$
+$$ cos(\pi 3k/2) \ = \ cos(\pi 3k/2 \ -2\pi k) \ = \ cos(-\pi k/2) \ = \ cos(\pi k/2) $$
+Thus , $$e^{-j\pi k/2} e^{-j\pi 3k/2} $$ 
+$$ = \ cos(\pi k/2) -jsin(\pi k/2)\ + \ cos(\pi 3k/2) -jsin(\pi 3k/2) $$
+$$ = \ cos(\pi k/2) -jsin(\pi k/2)\ + \ cos(\pi k/2) +jsin(\pi 3k/2) $$
+$$ = \ 2cos(\pi k/2) $$
+Hence , 
+$$\sum_{k=0}^{3} x[k](e^{-j\pi k/2} e^{-j\pi 3k/2})\ =\ \sum_{k=0}^{3} x[k](2cos(\pi k/2))\ = \ 4 $$
+For $k\ =1$ and $k\ =3$ , $2cos(\pi k/2)\ = \ 0$.Then \\
+$$2x[0]\ - \ 2x[2] \ = \ 4$$
+$$x[0]\ - \ x[2] \ = \ 2$$\\
+
+These properties are deduced from given conditions.\\\\
+
+The general formula for $a_k$'s is $$ \frac{1}{N}\sum_{n=<N>}^{} x[n](e^{-jk\omega_0 n})$$\\
+In this case , period is 4 and over one period of summation ( [0,3] interval is choosen) is:
+$$ \frac{1}{4}x[0]\ + \  \frac{1}{4}x[1]e^{-jk\omega_0}\ + \   \frac{1}{4}x[2]e^{-2jk\omega_0}\ + \  \frac{1}{4}x[3]e^{-3jk\omega_0}$$.\\
+Since $\omega_0 = \pi/2$ , 
+$$a_0\ = \ \frac{1}{4}x[0]\ + \ \frac{1}{4}x[1]\ + \ \frac{1}{4}x[2]\ + \ \frac{1}{4}x[3]$$.
+$$a_0\ = \frac{1}{4}(\ x[0]\ + \ x[1]\ + \ x[2]\ + \ x[3]\ )$$
+This sum in the paranthesis is known from part(b) and it is 4.Therefore,
+$$a_0\ =\ 1$$
+It is given that $ a_1$ and $a_3$ are conjugate complex numbers.\\
+Let $a_1$ be $x\ + \ jy$.\\
+Then $a_3$ will be $a_1$ be $x\ - \ jy$.\\
+$|a_1\ -\ a_3| \ = \ |2yj|\ = 1 \rightarrow$ at least imaginary parts of these coefficients are exist.\\
+Thus , $a_0\ $,$a_1\ $ and $a_3$ cannot be 0.However, it is given that one coeeficient is 0.That means
+$$a_2 \ = \ 0$$
+By the way ,
+$$a_2\ = \frac{1}{4}(\ x[0]\ - \ x[1]\ + \ x[2]\ - \ x[3]\ )$$\\
+From general formula of $a_k$'s , $a_1$ can be derived that 
+$$a_1 \ = \frac{1}{4}x[0]\ + \  \frac{1}{4}x[1]e^{-j\omega_0}\ + \   \frac{1}{4}x[2]e^{-2j\omega_0}\ + \  \frac{1}{4}x[3]e^{-3j\omega_0}$$.\\
+$$ \ = \ \frac{1}{4}x[0]\ + \  \frac{1}{4}x[1](cos(\pi /2) -jsin(\pi /2))\ + \   \frac{1}{4}x[2](cos(\pi) -jsin(\pi))\ + \  \frac{1}{4}x[3](cos(3\pi /2) -jsin(3\pi /2))$$
+$$ \ = \ \frac{1}{4}x[0]\ - \  \frac{1}{4}jx[1]\ - \ \frac{1}{4}x[2]\ + \  \frac{1}{4}jx[3]$$
+Similarly , $a_3$ is:
+$$a_3 \ = \frac{1}{4}x[0]\ + \  \frac{1}{4}x[1]e^{-3j\omega_0}\ + \   \frac{1}{4}x[2]e^{-6j\omega_0}\ + \  \frac{1}{4}x[3]e^{-9j\omega_0}$$.\\
+$$ \ = \ \frac{1}{4}x[0]\ + \  \frac{1}{4}x[1](cos(3\pi /2) -jsin(3\pi /2))\ + \   \frac{1}{4}x[2](cos(3\pi) -jsin(3\pi))\ + \  \frac{1}{4}x[3](cos(9\pi /2) -jsin(9\pi /2))$$
+$$ \ = \ \frac{1}{4}x[0]\ + \  \frac{1}{4}jx[1]\ - \ \frac{1}{4}x[2]\ - \  \frac{1}{4}jx[3]$$
+From part b and previous calculations, it is known that 
+$$|a_1\ -\ a_3|\ =\ 1 $$
+Put the values of $a_1$ and $a_3$ , 
+$$| \frac{1}{4}(2j(x[3]\ -\ x[1]))| =\ 1$$
+$$| \frac{1}{2}j(x[3]\ -\ x[1])| =\ 1$$ 
+$$| j(x[3]\ -\ x[1])\ |=\ 2$$ 
+Thus, 
+$$|x[3]\ -\ x[1]|\ = \ 2 $$ 
+In this point both $(x[3]\ -\ x[1])$ or $(x[1]\ -\ x[3])$ can be 2.
+Let me choose $(x[1]\ -\ x[3])=2$.\\
+Recall that
+$$a_0\ = \frac{1}{4}(\ x[0]\ + \ x[1]\ + \ x[2]\ + \ x[3]\ )\ =\ 1$$
+$$a_2\ = \frac{1}{4}(\ x[0]\ - \ x[1]\ + \ x[2]\ - \ x[3]\ )\ =\ 0$$
+If inside the paranthesis of $a_0$ and $a_2$ are :
+$$\ x[0]\ + \ x[1]\ + \ x[2]\ + \ x[3]\ = \ 4 $$
+$$\ x[0]\ - \ x[1]\ + \ x[2]\ - \ x[3]\ = \ 0$$
+If these values are added:
+$$ 2x[0] + 2x[2]\ =\ 4 \rightarrow x[0]\ + x[2]\ =\ 2$$
+From e and previous calculations, 
+$$x_0\ - x_2\ =\ 2 $$	
+Thus , $$x[0]\ = 2$$ $$x[2]\ = 0$$
+Placing this values into equation $\ (x[0]\ + \ x[1]\ + \ x[2]\ + \ x[3]\ = \ 4) $,
+$$\ 2\ + \ x[1]\ + \ 0\ + \ x[3]\ = \ 4 $$
+$$\ x[1]\ + \ x[3]\ = \ 2 $$
+From previous calculations,
+$$\ x[1]\ - \ x[3]\ = \ 2 $$
+Thus, $$x[1]\ = 2$$ $$x[3]\ = 0$$
+Whole values are:$$x[0]\ = 2\ ,\ x[1]\ = 2\ ,\ x[2]\ = 0\ ,\ x[3]\ = 0$$
+
+Graph of $x[n]$ is:
+
+\begin{figure} [H]
+	\ldots
+    \centering
+    \begin{tikzpicture}[scale=1.0] 
+      \begin{axis}[
+          axis lines=middle,
+          xlabel={$n$},
+          ylabel={$\boldsymbol{x[n]}$},
+          xtick={ -3,-2,-1, 0, ..., 4},
+          ytick={ -1,0,1,2,3},
+          ymin=-1, ymax=3,
+          xmin=-3, xmax=4,
+          every axis x label/.style={at={(ticklabel* cs:1.05)}, anchor=west,},
+          every axis y label/.style={at={(ticklabel* cs:1.05)}, anchor=south,},
+          grid,
+        ]
+        \addplot [ycomb, black, thick, mark=*] table [x={n}, y={xn}] {q2.dat};
+      \end{axis}
+    \end{tikzpicture}
+    \ldots
+    \caption{$n$ vs. $x[n]$.}
+    \label{fig:q3}
+\end{figure}
+
+\item %write the solution of q3     
+\begin{align*}
+&Normally \ y(t) \ = \ h(t) \ast x(t) \\
+&In \ the \ question \ it \ is \ said \ that \ x(t) \ = \ h(t) \ast [x(t) + r(t)] \\
+&When \ we \ apply \ Fourier \ Transform \ to \ this, \ we \ get \\ 
+&X(jw) = H(jw).[X(jw) + R(jw)] \\
+&X(jw) = H(jw).X(jw) + H(jw).R(jw) \\
+&R(jw) = 0, \ as \ r(t) \ is \ composed \ of \ only \ high \ frequency \ components. \ Therefore, \\
+&X(jw) = H(jw).X(jw) \\
+&Hence, \ H(jw) = 1 \ for \ |w| \leq K2\pi/T \\
+&Now \ we \ need \ to \ find \ h(t) \ by \ applying \ inverse \ Fourier \ Transform \ to \ H(jw) \\
+&h(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} H(jw)e^{jwt}dw \\ \\
+h(t) &= \frac{1}{2\pi} \int_{-K2\pi/T}^{K2\pi/T}e^{jwt}dw \\
+&=\frac{1}{2\pi}.\frac{e^jwt}{jt}\vert_{-K2\pi/T}^{K2\pi/T} \\
+&=\frac{1}{2\pi}(\frac{e^{jK2 \pi t/T}}{jt} - \frac{e^{-jK2\pi t/T}}{jt}) \\
+&=\frac{1}{\pi t}(\frac{e^{jK2 \pi t/T} - e^{-jK2\pi t/T}}{2j}) \\
+So \ h(t) &= \frac{1}{\pi t}.sin(\frac{K2\pi t}{T}) \\
+\end{align*}
+
+\item 
+    \begin{enumerate}
+    \item %write the solution of q4a
+    \begin{align*}
+    &First \ of \ all, \ when \ we \ give \ x(t) = e^{jwt} \ to \ a \ system, \ we \ get \ y(t) = H(jw).e^{jwt} \\
+    &Secondly, \ the \ differential \ equation \ that \ represents \ this \ system \ is \ y''(t) = x(t) - 6y(t) - 5y'(t) + 4x'(t)  \\ 
+    &Now \ put \ the \ corresponding \ values \ we \ found \ in \ the \ first \ part \ to \ this \ equation \\
+    &H(jw).(jw)^2.e^{jwt} = e^{jwt} - 6H(jw).e^{jwt} - 5H(jw).jw.e^{jwt} + 4jw.e^{jwt} \\
+    &We \ need \ to \ find \ H(jw), \ so \ put \ the \ parts \ containing \ H(jw) \ to \ the \ left \ side \ of \ the \ equality. \\
+    &H(jw).(jw)^2.e^{jwt} + 6H(jw).e^{jwt} + 5H(jw).jw.e^{jwt} = e^{jwt} + 4jw.e^{jwt} \\
+    &H(jw)e^{jwt}.[(jw)^2 +5jw +6] = e^{jwt}. [4jw + 1] \\
+    &So, \ frequency \ response \ is \ H(jw) = \frac{4jw + 1}{(jw)^2 +5jw +6} = \frac{4jw+1}{(3+jw)(2+jw)} \\
+    \end{align*}
+    \item %write the solution of q4b
+    \begin{align*}
+    &In \ order  \ to \ find \ the \ impulse \ response \ of \ this \ system, \ we \ need \ to \ apply \ inverse \ Fourier \ Transform \ to \ the \ frequency \ response \ we \ found \ above. \\
+    &H(jw) = \frac{4jw+1}{(3+jw)(2+jw)} = \frac{A}{3+jw} + \frac{B}{2+jw} \\
+    &2A +Ajw + 3B +Bjw = 4jw + 1 \\
+    &2A + 3B = 1 \\
+    &A +B = 4 \\
+    &Then, \ A = 11 \ and \ B = -7 \\ \\
+    &H(jw) = 11. \frac{1}{3+jw} - 7. \frac{1}{2+jw} \\
+    &After \ applying \ inverse \ Fourier \ Transform \ to \ H(jw), \ we \ get \\
+    &h(t) \ = 11e^{-3t}u(t) - 7e^{-2t}u(t) \quad (e^{-|a|t}u(t) \longleftrightarrow \frac{1}{|a| + jw}) \\
+    &\quad \quad =(11e^{-3t} - 7e^{-2t})u(t)
+    \end{align*}
+    \item %write the solution of q4c
+    \begin{align*}
+    &Since \ Y(jw) = H(jw).X(jw), \ we \ first \ need \ to \ find \ the \ Fourier \ Transform \ of \ x(t). \\ 
+    &Then, \ we \ will \ calculate \ Y(jw) \ and \ apply \ inverse \ Fourier \ Transform \ to \ it. \\
+    &Apply \ F.T \\ 
+    &x(t)= \frac{1}{4}e^{\frac{-t}{4}}u(t) \longleftrightarrow X(jw) = \frac{1}{4}.\frac{1}{\frac{1}{4}+jw} = \frac{1}{1+4jw}  \quad (e^{-|a|t}u(t) \longleftrightarrow \frac{1}{|a| + jw})\\ \\
+    &Y(jw) = H(jw).X(jw) \\
+    &= \frac{4jw+1}{(3+jw)(2+jw)} . \frac{1}{1+4jw} \\
+    &= \frac{1}{(3+jw)(2+jw)} \\
+    &= \frac{1}{2+jw} - \frac{1}{3+jw} \\ \\
+    &Apply \ inverse \ F.T \\
+    &y(t) \ = e^{-2t}u(t) - e^{-3t}u(t) \\
+    &\quad \quad = (e^{-2t} - e^{-3t})u(t)
+    \end{align*}
+    \end{enumerate}
+
+
+\end{enumerate}
+\end{document}
+

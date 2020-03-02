@@ -1,0 +1,22 @@
+Release 12.4 Map M.81d (lin64)
+Xilinx Map Application Log File for Design 'af'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off
+-c 100 -o af_map.ncd af.ngd af.pcf 
+Target Device  : xc3s250e
+Target Package : cp132
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.52.76.2 $
+Mapped Date    : Wed Apr  4 23:22:29 2018
+
+ERROR:Map:116 - The design is empty.  No processing will be done.
+ERROR:Map:52 - Problem encountered processing RPMs.
+
+
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0

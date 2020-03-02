@@ -1,0 +1,13 @@
+delete
+delete a1
+register a1
+list
+delete a1
+list
+register a1
+list
+delete a1
+list
+delete a1
+list
+quit

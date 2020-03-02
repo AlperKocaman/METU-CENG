@@ -1,0 +1,63 @@
+sort
+sort ashd ahsd
+sort ABC ASC
+sort POP ASC
+sort ABC DESC
+sort POP DESC
+sort abc asc
+sort abc desc
+sort pop asc
+sort pop desc
+list
+register a
+register b
+register c
+register d
+register e
+list
+sort abc asc
+list
+sort abc desc
+list
+connect b d
+sort pop asc
+list
+sort pop desc
+list
+connect d b
+list
+sort pop asc
+list
+sort pop desc
+list
+connect c a
+connect c b
+connect c c
+connect c d
+connect c e 
+list
+sort pop asc
+list
+sort pop desc
+list
+connect a c
+connect b c
+connect c c
+connect d c
+connect e c
+list
+sort pop asc
+list
+sort pop desc
+list
+delete c
+list
+sort pop asc
+list
+sort pop desc
+list
+sort abc asc
+list
+sort abc desc
+list 
+quit

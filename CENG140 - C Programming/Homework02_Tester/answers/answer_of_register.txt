@@ -1,0 +1,76 @@
+
+*******************************************************************************
+* CengBook                                                                    *
+* by Selim Temizer                                                            *
+*******************************************************************************
+
+*******************************************************************************
+Help                       : Print this menu
+List                       : List all users
+Plot                       : Create a plot of CengBook (requires GraphViz)
+Quit                       : Exit application
+-------------------------------------------------------------------------------
+Register   <user>          : Create a new user and add it to CengBook
+Delete     <user>          : Delete user from CengBook
+Find       <user>          : Search CengBook for user, display user information
+Connect    <user1> <user2> : Add a connection from user1 to user2
+Disconnect <user1> <user2> : Remove connection from user1 to user2
+Path       <user1> <user2> : Find shortest path from user1 to user2
+-------------------------------------------------------------------------------
+Sort <abc|pop> <asc|desc>  : Sort all users (alphabetically or by popularity)
+*******************************************************************************
+
+[CENGBOOK] > 
+  User name is longer than 10 characters!
+
+[CENGBOOK] > 
+  Incorrect number of arguments provided for the command 'Register'!
+
+[CENGBOOK] > 
+  User 'a1' registered successfully
+
+[CENGBOOK] > 
+  User 'a2' registered successfully
+
+[CENGBOOK] > 
+  User 'a3' registered successfully
+
+[CENGBOOK] > 
+  User 'a4' registered successfully
+
+[CENGBOOK] > 
+  User 'a5' registered successfully
+
+[CENGBOOK] > 
+  User 'a6' registered successfully
+
+[CENGBOOK] > 
+  User 'a7' registered successfully
+
+[CENGBOOK] > 
+  User 'a8' registered successfully
+
+[CENGBOOK] > 
+  User 'a9' registered successfully
+
+[CENGBOOK] > 
+  User 'a10' registered successfully
+
+[CENGBOOK] > 
+  CengBook is full, cannot register any new users!
+
+[CENGBOOK] > 
+  a1              : 0 Follower(s) , 0 Friend(s)
+  a2              : 0 Follower(s) , 0 Friend(s)
+  a3              : 0 Follower(s) , 0 Friend(s)
+  a4              : 0 Follower(s) , 0 Friend(s)
+  a5              : 0 Follower(s) , 0 Friend(s)
+  a6              : 0 Follower(s) , 0 Friend(s)
+  a7              : 0 Follower(s) , 0 Friend(s)
+  a8              : 0 Follower(s) , 0 Friend(s)
+  a9              : 0 Follower(s) , 0 Friend(s)
+  a10             : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  Have a nice day
+

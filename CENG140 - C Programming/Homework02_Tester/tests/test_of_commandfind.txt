@@ -1,0 +1,8 @@
+find
+find a1
+register a1
+find a1
+delete a1
+list
+find a1
+quit

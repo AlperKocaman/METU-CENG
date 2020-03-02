@@ -1,0 +1,153 @@
+Help
+list
+List
+register
+register a a a a 
+register a a
+register asbdhashdabdhabdsbdhjbsdhjbasdajbsdhajb
+register a1
+register a1
+register a2
+register a2
+register a3
+register a4
+register a5
+register a6
+register a7
+register a8
+register a9
+register a10
+register a11
+register a12
+register a13
+register a14
+register a15
+register a16
+connect a1 a2
+connect a1 a3 
+connect a1 a4
+connect a1 a4
+connect a1 a5
+connect a1 a6
+connect a1 a7
+connect a1 a12
+sort pop asc
+list
+sort pop desc
+list
+delete a1
+list
+connect a2 a3
+connect a3 a4
+connect a5 a6
+connect a6 a7
+connect a10 a11
+connect a13 a14
+connect a14 a15
+connect a5 a8
+connect a8 a4
+connect a4 a14
+connect a6 a10
+connect a11 a15
+connect a2 a5
+path a2 a6
+connect a9 a10
+connect a5 a6
+connect a11 a9
+path a11 a10
+path a10 a11
+connect a10 a2
+connect a2 a15
+connect a5 a6
+find a1
+find a2
+find a3
+find a4
+find a5
+find a6
+find a7
+find a8
+find a9
+find a10
+find a11
+find a12
+find a13
+find a14
+find a15
+list
+sort pop desc
+list
+sort pop asc
+list 
+register a1
+sort abc asc
+list
+sort abc desc
+list
+path a12 a14
+path a5 a15
+
+
+
+
+
+
+disconnect a11 a15
+
+
+
+
+
+
+path a5 a15
+list
+disconnect a2 a15
+disconnect a5 a6
+disconnect a2 a3
+disconnect a10 a2
+connect a7 a1
+delete a2
+delete a9
+delete a7
+delete a15
+delete asdaasd
+path a1 a12
+path a12 1
+connect a1 a12
+path a1 a12
+path a12 1
+find a1
+find a2
+find a3
+find a4
+find a5
+find a6
+find a7
+find a8
+find a9
+find a10
+find a11
+find a12
+find a13
+find a14
+find a15
+list
+sort pop desc
+list
+sort pop asc
+list 
+sort abc asc
+list
+sort abc desc
+list
+quit
+
+
+
+
+
+
+
+
+
+

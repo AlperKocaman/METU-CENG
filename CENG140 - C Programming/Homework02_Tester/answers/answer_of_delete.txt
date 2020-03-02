@@ -1,0 +1,61 @@
+
+*******************************************************************************
+* CengBook                                                                    *
+* by Selim Temizer                                                            *
+*******************************************************************************
+
+*******************************************************************************
+Help                       : Print this menu
+List                       : List all users
+Plot                       : Create a plot of CengBook (requires GraphViz)
+Quit                       : Exit application
+-------------------------------------------------------------------------------
+Register   <user>          : Create a new user and add it to CengBook
+Delete     <user>          : Delete user from CengBook
+Find       <user>          : Search CengBook for user, display user information
+Connect    <user1> <user2> : Add a connection from user1 to user2
+Disconnect <user1> <user2> : Remove connection from user1 to user2
+Path       <user1> <user2> : Find shortest path from user1 to user2
+-------------------------------------------------------------------------------
+Sort <abc|pop> <asc|desc>  : Sort all users (alphabetically or by popularity)
+*******************************************************************************
+
+[CENGBOOK] > 
+  Incorrect number of arguments provided for the command 'Delete'!
+
+[CENGBOOK] > 
+  User 'a1' not found in CengBook!
+
+[CENGBOOK] > 
+  User 'a1' registered successfully
+
+[CENGBOOK] > 
+  a1              : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  User 'a1' is deleted from CengBook
+
+[CENGBOOK] > 
+  CengBook is empty
+
+[CENGBOOK] > 
+  User 'a1' registered successfully
+
+[CENGBOOK] > 
+  a1              : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  User 'a1' is deleted from CengBook
+
+[CENGBOOK] > 
+  CengBook is empty
+
+[CENGBOOK] > 
+  User 'a1' not found in CengBook!
+
+[CENGBOOK] > 
+  CengBook is empty
+
+[CENGBOOK] > 
+  Have a nice day
+

@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "/home/alper269707/CENG232 FPGA/Lab3/hw3_part_1/af.xst" -ofn "/home/alper269707/CENG232 FPGA/Lab3/hw3_part_1/af.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 "af.ngc" af.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o af_map.ncd af.ngd af.pcf 
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o af_map.ncd af.ngd af.pcf 

@@ -1,0 +1,149 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+
+
+\usepackage[hmargin=3cm,vmargin=6.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+\newcommand{\HRule}{\rule{\linewidth}{1mm}}
+
+%misc libraries goes here
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning}
+
+\begin{document}
+
+\noindent
+\HRule \\[3mm]
+\begin{flushright}
+
+                                         \LARGE \textbf{CENG 222}  \\[4mm]
+                                         \Large Statistical Methods for Computer Engineering \\[4mm]
+                                        \normalsize      Spring '2017-2018 \\
+                                           \Large   Take Home Exam 1 \\
+                    \normalsize Deadline: May 25, 23:59 \\
+                    \normalsize Submission: via COW
+\end{flushright}
+\HRule
+
+\section*{Student Information }
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name : Alper Kocaman\\
+Id Number : 2169589 \\
+
+% Write your answers below the section tags
+\section*{Answer 3.8}
+
+The user can find the correct password without trying any wrong passwords.In this case,0 wrong passwords occur and let this possibility denoted by $P(0)$.\\
+Also,the user may find the password with trying all wrong passwords.Since there exist 3 wrong passwords,let this possibility denoted by $P(3)$.\\
+And all intermediate results may occur namely $P(1)$ and $P(2)$.\\
+
+The correct password may arise at one of four possibility and each of them is equal.\\
+So,pmf of $X$,$P(x)=P\{X=x\}$ ,$P(0)=P(1)=P(2)=P(3)=\frac{1}{4}$.\\
+
+By applying the formula of $\mu=E(x)=\sum\limits_{x} xP(x)$,\\ 
+
+$\mu=E(x)=\sum\limits_{x=0}^3 xP(x)=(0\times P(0))+(1\times P(1))+(2\times P(2))+(3\times P(3))=$\\
+$=(0\times \frac{1}{4})+(1\times \frac{1}{4})+(2\times \frac{1}{4})+(3\times \frac{1}{4})=\frac{6}{4}=1.5$.\\
+
+By applying the formula of $\sigma^2=Var(x)=\sum\limits_{x} (x-\mu)^2P(x)$,\\ 
+
+$\sigma^2=Var(x)=\sum\limits_{x=0}^3 (x-\mu)^2P(x)=((0-1.5)^2\times P(0))+((1-1.5)^2\times P(1))+((2-1.5)^2\times P(2))+((3-1.5)^2\times P(3))=$\\
+$=((-1.5)^2\times \frac{1}{4})+((-0.5)^2\times \frac{1}{4})+((0.5)^2\times \frac{1}{4})+((1.5)^2\times \frac{1}{4})=\frac{5}{4}=1.25$.\\
+
+Thus,expectation is $\mu=E(x)=1.5$ and variance is $\sigma^2=Var(x)=1.25$.
+
+\section*{Answer 3.15.a}
+\subsection*{a.}
+
+The probability of at least one hardware failure is all possibilities except no hardware failures that is\\
+
+$1 - P(X = 0,Y = 0) = 1 - 0.52 = 0.48$.
+
+\subsection*{b.}
+
+If probabilities in the same column are added up each other,Marginal pmf of $X$ is obtained.\\
+
+$P_x(0)=0.72,P_x(1)=0.23,P_x(2)=0.05$.\\\\
+If probabilities in the same row are added up each other,Marginal pmf of $Y$ is obtained.\\
+
+$P_y(0)=0.76,P_y(1)=0.17,P_y(2)=0.07$. \\\\
+If they are independent of each other,product of corresponding possibilities of all values should match the value given in the table.However,they are dependent of each other if one counterexample can be found.\\
+
+$P_x(0)=0.72,P_y(0)=0.76,P(X = 0,Y = 0) = 0.52$.\\
+
+$0.72 \times 0.76 = 0.5472 \neq 0.52$.\\\\
+Hence,they are dependent each other since a counterexample is found.
+   
+\section*{Answer 3.19}
+
+\subsection*{a.}
+Expectation of X, $\mu=E(x)=\sum\limits_{x} xP(x)$\\
+
+$((-2)\times P(X = -2))+((2)\times P(X = 2))=((-2)\times 0.5)+((2)\times 0.5)=0$\\\\
+Variation of X, $\sigma^2=Var(x)=\sum\limits_{x} (x-\mu)^2P(x)$,\\
+
+$((-2-0)^2\times P(X = -2))+((2-0)^2\times P(X = 2))=(4\times 0.5)+(4\times 0.5)=4$\\\\
+Thus,expectation of 100 shares of A is:\\
+
+$E(100X) = 100E(X) = 100\times 0 = 0.$\\\\
+And variance of X is:\\
+
+$Var(100X) = 100^2Var(X) = 10000\times 4 = 40000.$
+
+
+\subsection*{b.}
+
+Expectation of Y, $\mu=E(y)=\sum\limits_{y} yP(y)$\\
+
+$((-1)\times P(Y = -1))+((4)\times P(Y = 4))=((-1)\times 0.8)+((4)\times 0.2)=0$\\\\
+Variation of Y, $\sigma^2=Var(y)=\sum\limits_{y} (y-\mu)^2P(y)$,\\
+
+$((-1-0)^2\times P(X = -1))+((4-0)^2\times P(Y = 4))=(1\times 0.8)+(16\times 0.2)=4$\\\\
+Thus,expectation of 100 shares of B is:\\
+
+$E(100Y) = 100E(Y) = 100\times 0 = 0.$\\\\
+And variance of Y is:\\
+
+$Var(100Y) = 100^2Var(Y) = 10000\times 4 = 40000.$
+
+
+
+\subsection*{c.}
+
+Expectation of 50 shares of A(random variable X) and 50 shares of B(random variable Y) is:\\
+
+$E(50X + 50Y) = 50E(X) + 50E(Y) = 50\times 0 + 50\times 0 = 0.$\\\\
+Variance of 50 shares of A(random variable X) and 50 shares of B(random variable Y) is:\\
+
+$Var(50X + 50Y) = 50^2Var(X) + 50^2Var(Y) = 2500\times 4 + 2500\times 4 = 20000.$
+
+
+\section*{Answer 3.29}
+
+Occurrence of an accident is a rare event so poisson distribution can be used for these events.\\
+Since Eric had no accidents last year,random variable $X=0$.Also the average rate of accidents for high-risk group is 1, $\lambda = 1$ for this group and   the average rate of accidents for low-risk group is 0.1, $\lambda = 0.1$ for this group.\\\\
+From table A.3 in coursebook:\\
+
+Poisson distribution for $X=0,\lambda = 1$ is 0.368.(High-Risk Poisson Distribution)\\
+
+Poisson distribution for $X=0,\lambda =0.1$ is 0.905.((Low-Risk Poisson Distribution))\\\\
+Because the percent of high-risk group customers is 0.2 and 0.8 are low-risk group;\\
+ 
+
+$\frac{0.2\times 0.368}{0.2 \times 0.368 + 0.8 \times 0.905} = \frac{0.0736}{0.7976} = 0.0922768 \cong 0.0923.$  
+
+
+
+
+
+\end{document}

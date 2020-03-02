@@ -1,0 +1,25 @@
+disconnect
+disconnect a1
+disconnect a1 a2
+register a1
+disconnect a1 a2
+delete a1
+register a2
+disconnect a1 a2
+register a1
+disconnect a1 a1
+disconnect a2 a2 
+disconnect a1 a2
+connect a1 a2
+list
+connect a2 a1
+list
+disconnect a1 a2
+list
+disconnect a2 a1
+list
+disconnect a2 a1
+list
+disconnect a1 a2
+list
+quit

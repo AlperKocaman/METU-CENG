@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="905" delta="old" >&quot;<arg fmt="%s" index="1">Board232.v</arg>&quot; line <arg fmt="%d" index="2">61</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;currentFloor1&gt;, &lt;doorOpen1&gt;, &lt;currentFloor2&gt;, &lt;doorOpen2&gt;, &lt;seg_digits&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">check</arg>&gt; in unit &lt;<arg fmt="%s" index="2">Elevator</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">i_del</arg>&gt; in unit &lt;<arg fmt="%s" index="2">Elevator</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="1872" delta="old" >Variable &lt;<arg fmt="%s" index="1">i_work</arg>&gt; is used but never assigned.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">btn&lt;2:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">sw&lt;5:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">seg_digits</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_list_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Elevator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mclk_counter_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Board232</arg>&gt;.
+</msg>
+
+</messages>
+

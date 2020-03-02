@@ -1,0 +1,330 @@
+Release 12.4 - xst M.81d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: Board232.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Board232.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Board232"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-cp132
+
+---- Source Options
+Top Module Name                    : Board232
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "lab4_2.v" in library work
+Compiling verilog file "Board232.v" in library work
+Module <lab4_2> compiled
+Module <Board232> compiled
+No errors in compilation
+Analysis of file <"Board232.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Board232> in library <work>.
+
+Analyzing hierarchy for module <lab4_2> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Board232>.
+WARNING:Xst:2725 - "Board232.v" line 94: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 95: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 96: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 97: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 98: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 99: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 100: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 101: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 102: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 103: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 104: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 105: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 106: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 107: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 108: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 109: Size mismatch between case item and case selector.
+WARNING:Xst:905 - "Board232.v" line 64: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sw>, <led>, <listOut>, <tmp_digit>
+Module <Board232> is correct for synthesis.
+ 
+Analyzing module <lab4_2> in library <work>.
+Module <lab4_2> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <capWngLP> in unit <lab4_2> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <capWngCF> in unit <lab4_2> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <memLP<4>> in unit <lab4_2> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <memLP<3>> in unit <lab4_2> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <memLP<2>> in unit <lab4_2> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <memLP<1>> in unit <lab4_2> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <memLP<0>> in unit <lab4_2> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <memCF<4>> in unit <lab4_2> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <memCF<0>> in unit <lab4_2> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <lab4_2>.
+    Related source file is "lab4_2.v".
+WARNING:Xst:1305 - Output <numPlyLP> is never assigned. Tied to value 00000000.
+WARNING:Xst:1305 - Output <numPlyCF> is never assigned. Tied to value 00000000.
+    Found 1-bit register for signal <listMode>.
+    Found 1-bit register for signal <findRes>.
+    Found 1-bit register for signal <teamWng>.
+    Found 4-bit register for signal <listOut>.
+    Found 4-bit comparator equal for signal <findRes$cmp_eq0000> created at line 378.
+    Found 4-bit comparator equal for signal <findRes$cmp_eq0001> created at line 378.
+    Found 4-bit comparator equal for signal <findRes$cmp_eq0002> created at line 378.
+    Found 3-bit register for signal <i>.
+    Found 3-bit subtractor for signal <i$addsub0000> created at line 414.
+    Found 12-bit register for signal <memCF<1:3>>.
+    Found 4-bit comparator equal for signal <mux0010$cmp_eq0008> created at line 211.
+    Found 4-bit comparator equal for signal <mux0010$cmp_eq0009> created at line 211.
+    Found 4-bit comparator equal for signal <mux0010$cmp_eq0010> created at line 211.
+    Found 1-bit xor2 for signal <mux0010$xor0000> created at line 193.
+    Found 3-bit register for signal <numCF>.
+    Found 4-bit comparator not equal for signal <numCF$cmp_ne0000> created at line 143.
+    Found 4-bit comparator not equal for signal <numCF$cmp_ne0001> created at line 153.
+    Found 4-bit comparator not equal for signal <numCF$cmp_ne0002> created at line 163.
+    Found 3-bit adder for signal <numCF$share0000>.
+    Found 3-bit register for signal <numLP>.
+    Found 3-bit adder for signal <numLP$share0000>.
+    Found 3-bit subtractor for signal <old_i_15$sub0000> created at line 404.
+    Found 4-bit comparator equal for signal <old_numCF_10$cmp_eq0000> created at line 163.
+    Found 3-bit subtractor for signal <old_numCF_10$sub0000> created at line 169.
+    Found 3-bit subtractor for signal <old_numCF_12$sub0000> created at line 179.
+    Found 3-bit subtractor for signal <old_numCF_7$sub0000> created at line 139.
+    Found 4-bit comparator equal for signal <old_numCF_8$cmp_eq0000> created at line 143.
+    Found 3-bit subtractor for signal <old_numCF_8$sub0000> created at line 149.
+    Found 4-bit comparator equal for signal <old_numCF_9$cmp_eq0000> created at line 153.
+    Found 3-bit subtractor for signal <old_numCF_9$sub0000> created at line 159.
+    Found 3-bit subtractor for signal <old_numLP_11$sub0000> created at line 123.
+    Found 3-bit subtractor for signal <old_numLP_3$sub0000> created at line 83.
+    Found 3-bit subtractor for signal <old_numLP_4$sub0000> created at line 93.
+    Found 3-bit subtractor for signal <old_numLP_5$sub0000> created at line 103.
+    Found 3-bit subtractor for signal <old_numLP_6$sub0000> created at line 113.
+    Summary:
+	inferred  52 D-type flip-flop(s).
+	inferred  14 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <lab4_2> synthesized.
+
+
+Synthesizing Unit <Board232>.
+    Related source file is "Board232.v".
+WARNING:Xst:647 - Input <btn<2:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sw<3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <tmp_digit> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <numPlyLP> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <numPlyCF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 8-bit latch for signal <$old_tmp_digit_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16x7-bit ROM for signal <seg$mux0000>.
+    Found 27-bit up counter for signal <mclk_counter>.
+    Found 8-bit 4-to-1 multiplexer for signal <old_tmp_digit_2$mux0000> created at line 67.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   8 Multiplexer(s).
+Unit <Board232> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 14
+ 3-bit adder                                           : 2
+ 3-bit subtractor                                      : 12
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 34
+ 1-bit register                                        : 27
+ 3-bit register                                        : 3
+ 4-bit register                                        : 4
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 12
+ 4-bit comparator equal                                : 9
+ 4-bit comparator not equal                            : 3
+# Multiplexers                                         : 2
+ 4-bit 5-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 14
+ 3-bit adder                                           : 2
+ 3-bit subtractor                                      : 12
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 12
+ 4-bit comparator equal                                : 9
+ 4-bit comparator not equal                            : 3
+# Multiplexers                                         : 2
+ 4-bit 5-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+ERROR:Xst:528 - Multi-source in Unit <lab4_2> on signal <memLP<4><3>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDE instance <HH/memLP<4>_3>
+   Signal <HH/memLP<4><3>> in Unit <lab4_2> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <lab4_2> on signal <memLP<4><2>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDE instance <HH/memLP<4>_2>
+   Signal <HH/memLP<4><2>> in Unit <lab4_2> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <lab4_2> on signal <memLP<4><1>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDE instance <HH/memLP<4>_1>
+   Signal <HH/memLP<4><1>> in Unit <lab4_2> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <lab4_2> on signal <memLP<4><0>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDE instance <HH/memLP<4>_0>
+   Signal <HH/memLP<4><0>> in Unit <lab4_2> is assigned to GND
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.09 secs
+ 
+--> 
+
+
+Total memory usage is 342096 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

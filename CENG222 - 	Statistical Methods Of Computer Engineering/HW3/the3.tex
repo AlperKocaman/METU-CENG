@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+
+
+\usepackage[hmargin=3cm,vmargin=6.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+\newcommand{\HRule}{\rule{\linewidth}{1mm}}
+
+%misc libraries goes here
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning}
+
+\begin{document}
+
+\noindent
+\HRule \\[3mm]
+\begin{flushright}
+
+                                         \LARGE \textbf{CENG 222}  \\[4mm]
+                                         \Large Statistical Methods for Computer Engineering \\[4mm]
+                                        \normalsize      Spring '2017-2018 \\
+                                           \Large   Take Home Exam 1 \\
+                    \normalsize Deadline: May 25, 23:59 \\
+                    \normalsize Submission: via COW
+\end{flushright}
+\HRule
+
+\section*{Student Information }
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name : Alper KOCAMAN \\
+Id Number :  2169589\\
+
+% Write your answers below the section tags
+\section*{Answer 1}
+
+By using monte carlo size formula;\\\\
+$N\geq0.25\times\frac{(z_{\alpha/2})}{\varepsilon}$.\\
+By putting values,\\\\
+$N\geq0.25\times\frac{1.96}{0.005}$ = $38416$ trials are needed to obtain results that have such precisions.\\\\
+After than,it is needed to generate a poisson random variable which has $\lambda=20$,since an expectation of 1 hour is 4 and we are expexted to generate a random number for caught minions in 5 hours.\\\\
+After than,an "a" , "b" and "c" values are found in order to apply rejection method.\\\\
+After these values are controlled,corresponding "weight" and "speed" values are found randomly for each minion.Then it is investigated that whether it's weight is more than 2 times of its speed.If it is,then a counter is incremented.After inside for loop terminates,if number of minions that have this property is more than 6,we increment another counter to accept this minion set.\\\\
+With tha aid of outer for loop,we can do this job for 38,416 times,which gives us a "correct" answer within given precision. 
+
+
+\section*{Answer 2}
+
+The only thing differs here is not finding sets that have more than 6 minions,we are asked to find the total weight.\\
+So , for every minion,it's weight is summed up with total weight of minions.\\
+Then,by dividing this total number with 38,416,correct result is obtained.\\
+
+\section*{Answer 3}
+The "a" and "b" value is found randomly with matlab functions exprnd() and normrnd().\\\\
+The estimation of this value can be found randomly in matlab with "mean" function.I do this job 1000 times to converge the correct result.\\
+
+
+
+
+\end{document}

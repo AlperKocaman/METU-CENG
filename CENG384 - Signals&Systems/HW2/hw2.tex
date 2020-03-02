@@ -1,0 +1,329 @@
+\documentclass[10pt,a4paper, margin=1in]{article}
+\usepackage{fullpage}
+\usepackage{amsfonts, amsmath, pifont}
+\usepackage{amsthm}
+\usepackage{graphicx}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=10mm,
+ right=10mm,
+ top=10mm,
+ bottom=10mm,
+ }
+
+\usepackage{float}
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.13}
+
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=10mm,
+ right=10mm,
+ top=10mm,
+ bottom=10mm,
+ }
+ % Write both of your names here. Fill exxxxxxx with your ceng mail address.
+ \author{
+  BAYKARA, Azad\\
+  \texttt{e2171320@ceng.metu.edu.tr}
+  \and
+  KOCAMAN, Alper\\
+  \texttt{e2169589@ceng.metu.edu.tr}
+}
+\title{CENG 384 - Signals and Systems for Computer Engineers \\
+Spring 2018-2019 \\
+Written Assignment 2}
+\begin{document}
+\maketitle
+
+
+
+\noindent\rule{19cm}{1.2pt}
+
+\begin{enumerate}
+
+\item 
+    \begin{enumerate}
+    % Write your solutions in the following items.
+    \item %write the solution of q1a
+    \[y(t) = \int_{-\infty}^{t} (x(\tau) - 4y(\tau) )d\tau\].
+    
+    \[ \frac{dy(t)}{dt}+4y(t)= x(t)\] \\is the main equation that will be solved. 
+    \item %write the solution of q1b
+    
+    Complete solution of differential equation consist of 2 parts:\\
+    particular solution $y_p(t)$ and \\
+    homogenous solution $y_h(t)$.\\\\
+    
+    This input $(e^{-t}+e^{-2t})u(t)$ can be parsed as $e^{-t}u(t) + e^{-2t}u(t)$.\\
+    
+    Particular solution of $e^{-t}u(t)$ for $t>0$:\\
+    \[ y_p(t) = Ye^{-t} \]
+    Place this guess in equation $\frac{dy(t)}{dt}+4y(t)= x(t)$:
+    \[ -Ye^{-t}+4Ye^{-t} = e^{-t} \]
+    \[ 3Y = 1 \rightarrow y = \frac{1}{3} \]
+    \[ y_p(t) = \frac{1}{3} e^{-t} \]\\
+    
+    Particular solution of $e^{-t}u(t)$ when t is less than 0 is zero since $u(t)$ is defined as 0 at that interval.\\
+    
+    Particular solution of $e^{-2t}u(t)$ for $t>0$:\\
+    \[ y_p(t) = Ye^{-2t} \]
+    Place this guess in equation $\frac{dy(t)}{dt}+4y(t)= x(t)$ :
+    \[ -2Ye^{-t}+4Ye^{-t} = e^{-2t} \]
+    \[ 2Y = 1 \rightarrow y = \frac{1}{2} \]
+    \[ y_p(t) = \frac{1}{2} e^{-2t} \]\\
+    
+    This particular solution is 0 as well since $u(t)$ is 0 when $t<0$.\\
+    
+    Thus, overall particular solution for input $(e^{-t}+e^{-2t})u(t)$ is:\\
+    \[ y_p(t) = \frac{1}{3} e^{-t}+ \frac{1}{2} e^{-2t} \]
+    
+    Now,homogenous solution should be found.\\
+    \[ y_h(t) = Ae^{st} \]
+     Place this guess in equation $\frac{dy(t)}{dt}+4y(t)= 0$(right side should be 0 in homogenous solution) :
+     \[ Ase^{st}+4Ae^{st} = 0 \]
+     \[ Ae^{st}(s+4) = 0 \]
+     \[ s = -4 \]
+     
+     Then , homogenous solution is:
+     \[ y_h(t) = Ae^{-4t} \]
+     
+     Total solution,$y_p(t)+y_h(t)$ is:
+     \[ y(t)=y_p(t)+y_h(t) = \frac{1}{3} e^{-t}+ \frac{1}{2} e^{-2t}+Ae^{-4t} \]
+     \\
+     Since the system is initially rest , $y(0)= 0$,
+     \[ y(0)= \frac{1}{3} e^{-0}+ \frac{1}{2} e^{-0}+Ae^{-0} \]
+     \[ y(0)= \frac{1}{3}+ \frac{1}{2} +A \]
+     \[ A= -\frac{5}{6} \]
+     
+     Thus,homogenous solution is:
+     \[ y_h(t) = \frac{-5}{6}e^{-4t} \]
+     
+     and total solution $y(t)$ is:
+      \[ y(t)=y_p(t)+y_h(t) = (\frac{1}{3} e^{-t}+ \frac{1}{2} e^{-2t}-\frac{5}{6}e^{-4t})u(t) \]
+
+    \end{enumerate}
+
+
+\item %write the solution of q2
+	\begin{enumerate}
+    \item %write the solution of q2a
+    \begin{align*}
+    & We \ know \ that \ x[n]*\delta[n-k] = x[n-k]. \ Then, \\
+    &y[n] = x[n]*h[n] \\
+    &= (\delta[n-1] - 3\delta[n-2] + \delta[n-3])*(\delta[n+1] + 2\delta[n] - 3\delta[n-1]) \\
+    & = \delta[n] + 2\delta[n-1] -3\delta[n-1] - 3\delta[n-2] -6\delta[n-2] +\delta[n-2] + 9\delta[n-3] + 2\delta[n-3] - 3\delta[n-4] \\
+    & = \delta[n] -\delta[n-1] -8\delta[n-2] +11\delta[n-3] -3\delta[n-4] \\
+    \end{align*}
+    
+    \begin{figure} [H]
+    \centering
+    \begin{tikzpicture}[scale=1.3] 
+      \begin{axis}[
+          axis lines=middle,
+          width=10cm,
+		  height=6cm,
+          xlabel={$n$},
+          ylabel={$y[n]$},
+          xtick={ -2, -1, ..., 6},
+          ytick={-8, -3, -1, 1, 11},
+          ymin=-8, ymax=11,
+          xmin=-2, xmax=6,
+          every axis x label/.style={at={(ticklabel* cs:1.05)}, anchor=west,},
+          every axis y label/.style={at={(ticklabel* cs:1.05)}, anchor=south,},
+          grid,
+        ]
+        \addplot [ycomb, black, thick, mark=*] table [x={n}, y={xn}] {yn.dat};
+      \end{axis}
+    \end{tikzpicture}
+    \caption{$x[n]*h[n]$}
+	\end{figure}
+
+    \item %write the solution of q2b
+    \begin{align*}
+    &\frac{dx(t)}{dt} = \delta(t) + \delta(t-1) \\
+    & y(t) = h(t)*x(t) \\
+    &= \int_{-\infty}^{\infty}[\delta(t-\tau)+\delta(t-\tau-1)]e^{-2\tau}cos(\tau)u(\tau)d\tau \\
+    &= \int_{0}^{\infty}\delta(t-\tau)e^{-2\tau}cos(\tau)d\tau + \int_{0}^{\infty}\delta(t-\tau-1)e^{-2\tau}cos(\tau)d\tau \\
+    &= e^{-2t}cost + e^{-2(t-1)}cos(t-1)
+    \end{align*}
+    \end{enumerate}
+\item      
+    \begin{enumerate}
+    \item %write the solution of q3a
+    
+    \[y(t)=x(t)*h(t)\]
+    \[y(t) = \int_{-\infty}^{\infty} x(\tau) \times h(t-\tau) d\tau\].\\
+    
+    Input $x(t)=e^{-t}u(t)$ and response $h(t) = e^{-3t}u(t)$.\\
+    This integral can be broken up 3 parts which are:\\
+    $t<0$ and  $t\geq 0$.\\
+    
+    For $t<0$ part:
+    \[y(t) = \int_{-\infty}^{0} x(\tau) \times h(t-\tau) d\tau = 0\] since $x(\tau)$ and $h(t-\tau)$ don't have overlapping area.\\
+    
+    For $t\geq 0$ part:
+    \[x(\tau) = e^{-t}u(t)\ ,\ h(t-\tau)=e^{-3(t-\tau)}u(t)\]
+    \[y(t) = \int_{0}^{t} x(\tau) \times h(t-\tau) d\tau \]
+    \[= \int_{0}^{t} e^{-\tau} \times e^{-3(t-\tau)} d\tau \]
+    \[= e^{-3t}\int_{0}^{t} e^{2\tau} d\tau \]
+    \[= e^{-3t}\times \frac{e^{2\tau}}{2} \vert_{0}^{t}\]
+    \[= e^{-3t}\times (\frac{e^{2t}}{2}-\frac{1}{2})\]
+    \[= \frac{e^{-t}+e^{-3t}}{2}\]
+    
+    Thus, convolution of $x(t)$ with $h(t)$:
+    \[y(t)=x(t)*h(t)\]
+    equals to
+    
+    \[y(t)=0\ ,\ t<0 \]
+    \[y(t)=\frac{e^{-t}+e^{-3t}}{2}u(t) \] \\
+    
+     \item %write the solution of q3b
+    Input $x(t)$ is $u(t-1) - u(t-2)$ is equal to a function that is:\\
+    \[ 1 , 1\leq t \leq 2 \]
+    \[ 0\ ,\ otherwise \]
+    
+    Then, \[y(t)=x(t)*h(t)\]
+    \[y(t) = \int_{-\infty}^{\infty} x(\tau) \times h(t-\tau) d\tau\].\\
+    
+    This integral can be broken up 3 parts which are:\\
+    $t<1$ , $1\leq t \leq 2$ and $2\leq t$.\\
+    
+    For $t<1$ part:
+    \[y(t) = \int_{-\infty}^{1} x(\tau) \times h(t-\tau) d\tau = 0\] since $x(\tau)$ and $h(t-\tau)$ don't have overlapping area.\\
+    
+    For $1\leq t \leq 2$ part:
+    \[x(\tau) = 1, h(t-\tau)=e^{t-\tau} \]
+    \[y(t) = \int_{1}^{t} x(\tau) \times h(t-\tau) d\tau \]
+    \[= \int_{1}^{t} 1 \times e^{t-\tau} d\tau \]
+    \[= e^t\int_{1}^{t} e^{-\tau} d\tau \]
+    \[= -e^t\times e^{-\tau} \vert_{1}^{t}\]
+    \[= -e^t\times (e^{-t}-e^{-1})\]
+    \[= -1 +e^{t-1}\]
+    
+    For $2\leq t$ part:
+    \[x(\tau) = 1\ ,\ h(t-\tau)=e^{t-\tau} \]
+    \[y(t) = \int_{1}^{2} x(\tau) \times h(t-\tau) d\tau \]
+    \[= \int_{1}^{2} 1 \times e^{t-\tau} d\tau \]
+    \[= e^t\int_{1}^{2} e^{-\tau} d\tau \]
+    \[= -e^t\times e^{-\tau} \vert_{1}^{2}\]
+    \[= -e^t\times (e^{-2}-e^{-1})\]
+    \[= -e^{t-2} +e^{t-1}\]
+    
+    Thus, convolution of $x(t)$ with $h(t)$:
+    \[y(t)=x(t)*h(t)\]
+    equals to
+    
+    \[y(t)=0\ ,\ t<1 \]
+    \[y(t)=-1 +e^{t-1} ,\ 1\leq t \leq 2 \]
+    \[y(t)=-e^{t-2} +e^{t-1}\ ,\ 2\leq t \]
+    
+    \end{enumerate}
+
+\item 
+    \begin{enumerate}
+    \item %write the solution of q4a
+    \begin{align*}
+    &y[n] - 15y[n-1] + 26y[n-2] = 0. \ Change \ each \ n \ with \ n+2 \\
+    &y[n+2] - 15y[n+1] + 26y[n] = 0 \\
+    &Let \ y[n]=\lambda^n \ then, \\
+    &\lambda^{n+2} - 15\lambda^{n+1} + 26\lambda^{n} = 0 \\
+    &Divide \ both \ sides \ by \ \lambda^{n} \\
+    &\lambda^{2} - 15\lambda + 26 = 0 \\
+    &\lambda_1 = 13 \ and \ \lambda_2 = 2 \\
+    &y[n] = c_1.\lambda_1^n + c_2.\lambda_2^n \\
+    &y[n] = c_1.13^n + c_2.2^n \\
+    &y[0] = c_1 + c_2 = 10 \\
+    &y[1] = 13c_1 + 2c_2 = 42 \\
+    &Then \ c_1 = 2 \ and \ c_2 = 8 \\
+    &y[n] = 2.13^n + 8.2^n \\
+    \end{align*}
+    
+    \item %write the solution of q4b
+    \begin{align*}
+    &y[n] - 3y[n-1] + y[n-2] = 0. \ Change \ each \ n \ with \ n+2 \\
+    &y[n+2] - 3y[n+1] + y[n] = 0 \\
+    &Let \ y[n]=\lambda^n \ then, \\
+    &\lambda^{n+2} - 3\lambda^{n+1} + \lambda^{n} = 0 \\
+    &Divide \ both \ sides \ by \ \lambda^{n} \\
+    &\lambda^{2} - 3\lambda + 1 = 0 \\
+    &\lambda_1 = \frac{3 + \sqrt{5}}{2} \ and \ \lambda_2 = \frac{3 - \sqrt{5}}{2} \\
+    &y[n] = c_1.(\frac{3 + \sqrt{5}}{2})^n + c_2.(\frac{3 - \sqrt{5}}{2})^n \\
+    &y[0] = c_1 + c_2 = 1 \\
+    &y[1] = c_1(\frac{3 + \sqrt{5}}{2}) + c_2(\frac{3 - \sqrt{5}}{2}) = 2 \\
+    &Then \ c_1 = \frac{\sqrt{5} + 1}{2\sqrt{5}} \ and \ c_2 = \frac{\sqrt{5} - 1}{2\sqrt{5}} \\
+    &y[n] = \frac{\sqrt{5} + 1}{2\sqrt{5}}.(\frac{3 + \sqrt{5}}{2})^n + \frac{\sqrt{5} - 1}{2\sqrt{5}}.(\frac{3 - \sqrt{5}}{2})^n \\
+    \end{align*}
+    \end{enumerate}
+
+\item
+    \begin{enumerate}
+    \item %write the solution of q5a
+    This is a continuous LTI system so when an input $x(t)=\delta(t)$ (impulse),then the output $y(t)$ is $h(t)$ (impulse response).\\
+    
+    A general representations of these systems are:
+    
+    $$\sum_{k=0}^{N} a_k\frac{d^ky(t)}{dt^k} = x(t)$$  
+    
+    Solution of these systems are consist of 2 parts:\\
+    particular solution $y_p(t)$ and \\
+    homogenous solution $y_h(t)$.\\\\ 
+    Particular solution of this system which is $y_p(t)$ is corresponding to inputs when $t>0$.However , when $x(t)=\delta(t)$ is given as input,$x(t)=\delta(t)$ is 0 for $t>0$ and $y_p(t)$ become ineffective.\\
+    Thus, finding an impulse response of this LTI system is simply finding a homogenous solution of this system.\\\\
+    
+    Solution of homogenous part:\\
+    $$\sum_{k=0}^{N} a_k\frac{d^ky(t)}{dt^k} = 0$$  
+    $$ \frac{d^2y(t)}{dt^2}+6\frac{dy(t)}{dt}+8y(t)=0$$\\
+    In that point , a guess about solution should be done.
+    $$y_h(t)=Ae^{st}$$\\  
+    Then \\
+    $$y''+6y'+8y=0$$
+    $$s^2+6s+8=0$$
+    $$(s+4)(s+2)=0$$
+    $$s_1=-4 \ and \ s_2=-2$$\\
+    Placing these s values in the guess and that will construct the general solution for system:
+    $$A_1e^{-4t}+A_2e^{-2t}$$\\
+    Constants $A_1$ and $A_2$ should be found.
+    Since system is initally rest:
+    $$A_1+A_2 = \ 0$$
+    $$-2A_1-4A_2=\ 2$$\\
+    Then 
+    $$A_1=\ 1 \ and \ A_2=\ -1$$\\
+    Thus,impulse response of this system is
+    $$h(t) = (e^{-2t}-e^{-4t})u(t)$$
+    
+    \item %write the solution of q5b
+    i) An LTI system is causal if and only if $h(t)=0$ for $t<0$ \\
+    $h(t) = (e^{-2t} - e^{-4t})u(t)$ \\
+    Since $u(t)=0$ for $t<0$, $h(t)$ also equals to 0. Therefore, the given LTI system is causal. \\ \\
+    ii) In order a LTI system to be memoryless $h(t) = 0$ for $t \neq 0$, so basically $h(t) = k.\delta(t)$ \\
+    for $t < 0$, $h(t) = 0$ because $u(t)=0 \ for \ t<0$ \\
+    for $t > 0$, $h(t) = e^{-2t} - e^{-4t} \neq 0$. \\
+    Therefore, given LTI system is not memoryless. \\ \\ 
+    iii) A continuous-time LTI system is stable if
+and only if $\int_{-\infty}^{\infty}|h(t)|dt < \infty$ \\ \\
+	\begin{align*}
+	&\int_{-\infty}^{\infty}|(e^{-2t}-e^{-4t})u(t)|dt \\
+	&= \int_{0}^{\infty}(e^{-2t}-e^{-4t})dt \\
+	&= (\frac{e^{-2t}}{-2} - \frac{e^{-4t}}{-4}) \ \vert_{0}^{\infty}  \\
+	&= 0 - (\frac{-1}{4}) = \frac{1}{4} < \infty.
+	\end{align*}
+	Therefore, given LTI system is stable. \\ \\
+	iv) An LTI system is invertible if there is a $h^{-1}(t)$ such that $y(t) = x(t)*h(t)*h^{-1}(t) = x(t)$ which means $h(t)*h^{-1}(t) =  \delta(t)$ \\ \\
+	We need to find such $h^{-1}(t)$ that $(e^{-2t}-e^{-4t})u(t)*h^{-1}(t) = \delta(t)$ \\ \\
+	$\int_{-\infty}^{\infty}(e^{-2t}-e^{-4t}).u(t).h^{-1}(t)dt$ \\ \\
+	= $\int_{0}^{\infty}(e^{-2t}-e^{-4t}).h^{-1}(t)dt$ \\ \\
+	However, there is no $h^{-1}(t)$ that makes the value of this integral $\delta(t)$, so the given LTI system is not invertible. \\
+    \end{enumerate}
+
+\end{enumerate}
+\end{document}
+

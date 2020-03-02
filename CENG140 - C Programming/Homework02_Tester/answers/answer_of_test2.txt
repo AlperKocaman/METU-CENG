@@ -1,0 +1,669 @@
+
+*******************************************************************************
+* CengBook                                                                    *
+* by Selim Temizer                                                            *
+*******************************************************************************
+
+*******************************************************************************
+Help                       : Print this menu
+List                       : List all users
+Plot                       : Create a plot of CengBook (requires GraphViz)
+Quit                       : Exit application
+-------------------------------------------------------------------------------
+Register   <user>          : Create a new user and add it to CengBook
+Delete     <user>          : Delete user from CengBook
+Find       <user>          : Search CengBook for user, display user information
+Connect    <user1> <user2> : Add a connection from user1 to user2
+Disconnect <user1> <user2> : Remove connection from user1 to user2
+Path       <user1> <user2> : Find shortest path from user1 to user2
+-------------------------------------------------------------------------------
+Sort <abc|pop> <asc|desc>  : Sort all users (alphabetically or by popularity)
+*******************************************************************************
+
+[CENGBOOK] > 
+*******************************************************************************
+Help                       : Print this menu
+List                       : List all users
+Plot                       : Create a plot of CengBook (requires GraphViz)
+Quit                       : Exit application
+-------------------------------------------------------------------------------
+Register   <user>          : Create a new user and add it to CengBook
+Delete     <user>          : Delete user from CengBook
+Find       <user>          : Search CengBook for user, display user information
+Connect    <user1> <user2> : Add a connection from user1 to user2
+Disconnect <user1> <user2> : Remove connection from user1 to user2
+Path       <user1> <user2> : Find shortest path from user1 to user2
+-------------------------------------------------------------------------------
+Sort <abc|pop> <asc|desc>  : Sort all users (alphabetically or by popularity)
+*******************************************************************************
+
+[CENGBOOK] > 
+  CengBook is empty
+
+[CENGBOOK] > 
+  CengBook is empty
+
+[CENGBOOK] > 
+  Incorrect number of arguments provided for the command 'Register'!
+
+[CENGBOOK] > 
+  Incorrect number of arguments provided for the command 'Register'!
+
+[CENGBOOK] > 
+  Incorrect number of arguments provided for the command 'Register'!
+
+[CENGBOOK] > 
+  User name is longer than 15 characters!
+
+[CENGBOOK] > 
+  User 'a1' registered successfully
+
+[CENGBOOK] > 
+  User 'a1' already registered!
+
+[CENGBOOK] > 
+  User 'a2' registered successfully
+
+[CENGBOOK] > 
+  User 'a2' already registered!
+
+[CENGBOOK] > 
+  User 'a3' registered successfully
+
+[CENGBOOK] > 
+  User 'a4' registered successfully
+
+[CENGBOOK] > 
+  User 'a5' registered successfully
+
+[CENGBOOK] > 
+  User 'a6' registered successfully
+
+[CENGBOOK] > 
+  User 'a7' registered successfully
+
+[CENGBOOK] > 
+  User 'a8' registered successfully
+
+[CENGBOOK] > 
+  User 'a9' registered successfully
+
+[CENGBOOK] > 
+  User 'a10' registered successfully
+
+[CENGBOOK] > 
+  User 'a11' registered successfully
+
+[CENGBOOK] > 
+  User 'a12' registered successfully
+
+[CENGBOOK] > 
+  User 'a13' registered successfully
+
+[CENGBOOK] > 
+  User 'a14' registered successfully
+
+[CENGBOOK] > 
+  User 'a15' registered successfully
+
+[CENGBOOK] > 
+  CengBook is full, cannot register any new users!
+
+[CENGBOOK] > 
+  User 'a1' successfully connected to user 'a2'
+
+[CENGBOOK] > 
+  User 'a1' successfully connected to user 'a3'
+
+[CENGBOOK] > 
+  User 'a1' successfully connected to user 'a4'
+
+[CENGBOOK] > 
+  User 'a1' is already connected to user 'a4'!
+
+[CENGBOOK] > 
+  User 'a1' successfully connected to user 'a5'
+
+[CENGBOOK] > 
+  User 'a1' successfully connected to user 'a6'
+
+[CENGBOOK] > 
+  User 'a1' successfully connected to user 'a7'
+
+[CENGBOOK] > 
+  Friend capacity of user 'a1' is full!
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'ascending' order
+
+[CENGBOOK] > 
+  a1              : 0 Follower(s) , 6 Friend(s)
+  a8              : 0 Follower(s) , 0 Friend(s)
+  a9              : 0 Follower(s) , 0 Friend(s)
+  a10             : 0 Follower(s) , 0 Friend(s)
+  a11             : 0 Follower(s) , 0 Friend(s)
+  a12             : 0 Follower(s) , 0 Friend(s)
+  a13             : 0 Follower(s) , 0 Friend(s)
+  a14             : 0 Follower(s) , 0 Friend(s)
+  a15             : 0 Follower(s) , 0 Friend(s)
+  a2              : 1 Follower(s) , 0 Friend(s)
+  a3              : 1 Follower(s) , 0 Friend(s)
+  a4              : 1 Follower(s) , 0 Friend(s)
+  a5              : 1 Follower(s) , 0 Friend(s)
+  a6              : 1 Follower(s) , 0 Friend(s)
+  a7              : 1 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'descending' order
+
+[CENGBOOK] > 
+  a2              : 1 Follower(s) , 0 Friend(s)
+  a3              : 1 Follower(s) , 0 Friend(s)
+  a4              : 1 Follower(s) , 0 Friend(s)
+  a5              : 1 Follower(s) , 0 Friend(s)
+  a6              : 1 Follower(s) , 0 Friend(s)
+  a7              : 1 Follower(s) , 0 Friend(s)
+  a1              : 0 Follower(s) , 6 Friend(s)
+  a8              : 0 Follower(s) , 0 Friend(s)
+  a9              : 0 Follower(s) , 0 Friend(s)
+  a10             : 0 Follower(s) , 0 Friend(s)
+  a11             : 0 Follower(s) , 0 Friend(s)
+  a12             : 0 Follower(s) , 0 Friend(s)
+  a13             : 0 Follower(s) , 0 Friend(s)
+  a14             : 0 Follower(s) , 0 Friend(s)
+  a15             : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  User 'a1' is discounted from followers of user 'a2'
+  User 'a1' is discounted from followers of user 'a3'
+  User 'a1' is discounted from followers of user 'a4'
+  User 'a1' is discounted from followers of user 'a5'
+  User 'a1' is discounted from followers of user 'a6'
+  User 'a1' is discounted from followers of user 'a7'
+  User 'a1' is deleted from CengBook
+
+[CENGBOOK] > 
+  a2              : 0 Follower(s) , 0 Friend(s)
+  a3              : 0 Follower(s) , 0 Friend(s)
+  a4              : 0 Follower(s) , 0 Friend(s)
+  a5              : 0 Follower(s) , 0 Friend(s)
+  a6              : 0 Follower(s) , 0 Friend(s)
+  a7              : 0 Follower(s) , 0 Friend(s)
+  a8              : 0 Follower(s) , 0 Friend(s)
+  a9              : 0 Follower(s) , 0 Friend(s)
+  a10             : 0 Follower(s) , 0 Friend(s)
+  a11             : 0 Follower(s) , 0 Friend(s)
+  a12             : 0 Follower(s) , 0 Friend(s)
+  a13             : 0 Follower(s) , 0 Friend(s)
+  a14             : 0 Follower(s) , 0 Friend(s)
+  a15             : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  User 'a2' successfully connected to user 'a3'
+
+[CENGBOOK] > 
+  User 'a3' successfully connected to user 'a4'
+
+[CENGBOOK] > 
+  User 'a5' successfully connected to user 'a6'
+
+[CENGBOOK] > 
+  User 'a6' successfully connected to user 'a7'
+
+[CENGBOOK] > 
+  User 'a10' successfully connected to user 'a11'
+
+[CENGBOOK] > 
+  User 'a13' successfully connected to user 'a14'
+
+[CENGBOOK] > 
+  User 'a14' successfully connected to user 'a15'
+
+[CENGBOOK] > 
+  User 'a5' successfully connected to user 'a8'
+
+[CENGBOOK] > 
+  User 'a8' successfully connected to user 'a4'
+
+[CENGBOOK] > 
+  User 'a4' successfully connected to user 'a14'
+
+[CENGBOOK] > 
+  User 'a6' successfully connected to user 'a10'
+
+[CENGBOOK] > 
+  User 'a11' successfully connected to user 'a15'
+
+[CENGBOOK] > 
+  User 'a2' successfully connected to user 'a5'
+
+[CENGBOOK] > 
+  'a2' -> 'a5' -> 'a6'
+
+[CENGBOOK] > 
+  User 'a9' successfully connected to user 'a10'
+
+[CENGBOOK] > 
+  User 'a5' is already connected to user 'a6'!
+
+[CENGBOOK] > 
+  User 'a11' successfully connected to user 'a9'
+
+[CENGBOOK] > 
+  'a11' -> 'a9' -> 'a10'
+
+[CENGBOOK] > 
+  'a10' -> 'a11'
+
+[CENGBOOK] > 
+  User 'a10' successfully connected to user 'a2'
+
+[CENGBOOK] > 
+  User 'a2' successfully connected to user 'a15'
+
+[CENGBOOK] > 
+  User 'a5' is already connected to user 'a6'!
+
+[CENGBOOK] > 
+  User 'a1' not found in CengBook!
+
+[CENGBOOK] > 
+  a2 : 1 Follower(s) , 3 Friend(s)
+
+  1 - a3
+  2 - a5
+  3 - a15
+
+[CENGBOOK] > 
+  a3 : 1 Follower(s) , 1 Friend(s)
+
+  1 - a4
+
+[CENGBOOK] > 
+  a4 : 2 Follower(s) , 1 Friend(s)
+
+  1 - a14
+
+[CENGBOOK] > 
+  a5 : 1 Follower(s) , 2 Friend(s)
+
+  1 - a6
+  2 - a8
+
+[CENGBOOK] > 
+  a6 : 1 Follower(s) , 2 Friend(s)
+
+  1 - a7
+  2 - a10
+
+[CENGBOOK] > 
+  a7 : 1 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  a8 : 1 Follower(s) , 1 Friend(s)
+
+  1 - a4
+
+[CENGBOOK] > 
+  a9 : 1 Follower(s) , 1 Friend(s)
+
+  1 - a10
+
+[CENGBOOK] > 
+  a10 : 2 Follower(s) , 2 Friend(s)
+
+  1 - a11
+  2 - a2
+
+[CENGBOOK] > 
+  a11 : 1 Follower(s) , 2 Friend(s)
+
+  1 - a15
+  2 - a9
+
+[CENGBOOK] > 
+  a12 : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  a13 : 0 Follower(s) , 1 Friend(s)
+
+  1 - a14
+
+[CENGBOOK] > 
+  a14 : 2 Follower(s) , 1 Friend(s)
+
+  1 - a15
+
+[CENGBOOK] > 
+  a15 : 3 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  a2              : 1 Follower(s) , 3 Friend(s)
+  a3              : 1 Follower(s) , 1 Friend(s)
+  a4              : 2 Follower(s) , 1 Friend(s)
+  a5              : 1 Follower(s) , 2 Friend(s)
+  a6              : 1 Follower(s) , 2 Friend(s)
+  a7              : 1 Follower(s) , 0 Friend(s)
+  a8              : 1 Follower(s) , 1 Friend(s)
+  a9              : 1 Follower(s) , 1 Friend(s)
+  a10             : 2 Follower(s) , 2 Friend(s)
+  a11             : 1 Follower(s) , 2 Friend(s)
+  a12             : 0 Follower(s) , 0 Friend(s)
+  a13             : 0 Follower(s) , 1 Friend(s)
+  a14             : 2 Follower(s) , 1 Friend(s)
+  a15             : 3 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'descending' order
+
+[CENGBOOK] > 
+  a15             : 3 Follower(s) , 0 Friend(s)
+  a4              : 2 Follower(s) , 1 Friend(s)
+  a10             : 2 Follower(s) , 2 Friend(s)
+  a14             : 2 Follower(s) , 1 Friend(s)
+  a2              : 1 Follower(s) , 3 Friend(s)
+  a3              : 1 Follower(s) , 1 Friend(s)
+  a5              : 1 Follower(s) , 2 Friend(s)
+  a6              : 1 Follower(s) , 2 Friend(s)
+  a7              : 1 Follower(s) , 0 Friend(s)
+  a8              : 1 Follower(s) , 1 Friend(s)
+  a9              : 1 Follower(s) , 1 Friend(s)
+  a11             : 1 Follower(s) , 2 Friend(s)
+  a12             : 0 Follower(s) , 0 Friend(s)
+  a13             : 0 Follower(s) , 1 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'ascending' order
+
+[CENGBOOK] > 
+  a12             : 0 Follower(s) , 0 Friend(s)
+  a13             : 0 Follower(s) , 1 Friend(s)
+  a2              : 1 Follower(s) , 3 Friend(s)
+  a3              : 1 Follower(s) , 1 Friend(s)
+  a5              : 1 Follower(s) , 2 Friend(s)
+  a6              : 1 Follower(s) , 2 Friend(s)
+  a7              : 1 Follower(s) , 0 Friend(s)
+  a8              : 1 Follower(s) , 1 Friend(s)
+  a9              : 1 Follower(s) , 1 Friend(s)
+  a11             : 1 Follower(s) , 2 Friend(s)
+  a4              : 2 Follower(s) , 1 Friend(s)
+  a10             : 2 Follower(s) , 2 Friend(s)
+  a14             : 2 Follower(s) , 1 Friend(s)
+  a15             : 3 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  User 'a1' registered successfully
+
+[CENGBOOK] > 
+  CengBook sorted 'alphabetically' in 'ascending' order
+
+[CENGBOOK] > 
+  a1              : 0 Follower(s) , 0 Friend(s)
+  a10             : 2 Follower(s) , 2 Friend(s)
+  a11             : 1 Follower(s) , 2 Friend(s)
+  a12             : 0 Follower(s) , 0 Friend(s)
+  a13             : 0 Follower(s) , 1 Friend(s)
+  a14             : 2 Follower(s) , 1 Friend(s)
+  a15             : 3 Follower(s) , 0 Friend(s)
+  a2              : 1 Follower(s) , 3 Friend(s)
+  a3              : 1 Follower(s) , 1 Friend(s)
+  a4              : 2 Follower(s) , 1 Friend(s)
+  a5              : 1 Follower(s) , 2 Friend(s)
+  a6              : 1 Follower(s) , 2 Friend(s)
+  a7              : 1 Follower(s) , 0 Friend(s)
+  a8              : 1 Follower(s) , 1 Friend(s)
+  a9              : 1 Follower(s) , 1 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'alphabetically' in 'descending' order
+
+[CENGBOOK] > 
+  a9              : 1 Follower(s) , 1 Friend(s)
+  a8              : 1 Follower(s) , 1 Friend(s)
+  a7              : 1 Follower(s) , 0 Friend(s)
+  a6              : 1 Follower(s) , 2 Friend(s)
+  a5              : 1 Follower(s) , 2 Friend(s)
+  a4              : 2 Follower(s) , 1 Friend(s)
+  a3              : 1 Follower(s) , 1 Friend(s)
+  a2              : 1 Follower(s) , 3 Friend(s)
+  a15             : 3 Follower(s) , 0 Friend(s)
+  a14             : 2 Follower(s) , 1 Friend(s)
+  a13             : 0 Follower(s) , 1 Friend(s)
+  a12             : 0 Follower(s) , 0 Friend(s)
+  a11             : 1 Follower(s) , 2 Friend(s)
+  a10             : 2 Follower(s) , 2 Friend(s)
+  a1              : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  There is no path from user 'a12' to user 'a14'
+
+[CENGBOOK] > 
+  'a5' -> 'a6' -> 'a10' -> 'a11' -> 'a15'
+
+[CENGBOOK] > 
+[CENGBOOK] > 
+[CENGBOOK] > 
+[CENGBOOK] > 
+[CENGBOOK] > 
+[CENGBOOK] > 
+[CENGBOOK] > 
+  User 'a11' successfully disconnected from user 'a15'
+
+[CENGBOOK] > 
+[CENGBOOK] > 
+[CENGBOOK] > 
+[CENGBOOK] > 
+[CENGBOOK] > 
+[CENGBOOK] > 
+[CENGBOOK] > 
+  'a5' -> 'a6' -> 'a10' -> 'a2' -> 'a15'
+
+[CENGBOOK] > 
+  a9              : 1 Follower(s) , 1 Friend(s)
+  a8              : 1 Follower(s) , 1 Friend(s)
+  a7              : 1 Follower(s) , 0 Friend(s)
+  a6              : 1 Follower(s) , 2 Friend(s)
+  a5              : 1 Follower(s) , 2 Friend(s)
+  a4              : 2 Follower(s) , 1 Friend(s)
+  a3              : 1 Follower(s) , 1 Friend(s)
+  a2              : 1 Follower(s) , 3 Friend(s)
+  a15             : 2 Follower(s) , 0 Friend(s)
+  a14             : 2 Follower(s) , 1 Friend(s)
+  a13             : 0 Follower(s) , 1 Friend(s)
+  a12             : 0 Follower(s) , 0 Friend(s)
+  a11             : 1 Follower(s) , 1 Friend(s)
+  a10             : 2 Follower(s) , 2 Friend(s)
+  a1              : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  User 'a2' successfully disconnected from user 'a15'
+
+[CENGBOOK] > 
+  User 'a5' successfully disconnected from user 'a6'
+
+[CENGBOOK] > 
+  User 'a2' successfully disconnected from user 'a3'
+
+[CENGBOOK] > 
+  User 'a10' successfully disconnected from user 'a2'
+
+[CENGBOOK] > 
+  User 'a7' successfully connected to user 'a1'
+
+[CENGBOOK] > 
+  User 'a2' is discounted from followers of user 'a5'
+  User 'a2' is deleted from CengBook
+
+[CENGBOOK] > 
+  User 'a9' is removed from friends of user 'a11'
+  User 'a9' is discounted from followers of user 'a10'
+  User 'a9' is deleted from CengBook
+
+[CENGBOOK] > 
+  User 'a7' is removed from friends of user 'a6'
+  User 'a7' is discounted from followers of user 'a1'
+  User 'a7' is deleted from CengBook
+
+[CENGBOOK] > 
+  User 'a15' is removed from friends of user 'a14'
+  User 'a15' is deleted from CengBook
+
+[CENGBOOK] > 
+  User 'asdaasd' not found in CengBook!
+
+[CENGBOOK] > 
+  There is no path from user 'a1' to user 'a12'
+
+[CENGBOOK] > 
+  User '1' not found in CengBook!
+
+[CENGBOOK] > 
+  User 'a1' successfully connected to user 'a12'
+
+[CENGBOOK] > 
+  'a1' -> 'a12'
+
+[CENGBOOK] > 
+  User '1' not found in CengBook!
+
+[CENGBOOK] > 
+  a1 : 0 Follower(s) , 1 Friend(s)
+
+  1 - a12
+
+[CENGBOOK] > 
+  User 'a2' not found in CengBook!
+
+[CENGBOOK] > 
+  a3 : 0 Follower(s) , 1 Friend(s)
+
+  1 - a4
+
+[CENGBOOK] > 
+  a4 : 2 Follower(s) , 1 Friend(s)
+
+  1 - a14
+
+[CENGBOOK] > 
+  a5 : 0 Follower(s) , 1 Friend(s)
+
+  1 - a8
+
+[CENGBOOK] > 
+  a6 : 0 Follower(s) , 1 Friend(s)
+
+  1 - a10
+
+[CENGBOOK] > 
+  User 'a7' not found in CengBook!
+
+[CENGBOOK] > 
+  a8 : 1 Follower(s) , 1 Friend(s)
+
+  1 - a4
+
+[CENGBOOK] > 
+  User 'a9' not found in CengBook!
+
+[CENGBOOK] > 
+  a10 : 1 Follower(s) , 1 Friend(s)
+
+  1 - a11
+
+[CENGBOOK] > 
+  a11 : 1 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  a12 : 1 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  a13 : 0 Follower(s) , 1 Friend(s)
+
+  1 - a14
+
+[CENGBOOK] > 
+  a14 : 2 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  User 'a15' not found in CengBook!
+
+[CENGBOOK] > 
+  a8              : 1 Follower(s) , 1 Friend(s)
+  a6              : 0 Follower(s) , 1 Friend(s)
+  a5              : 0 Follower(s) , 1 Friend(s)
+  a4              : 2 Follower(s) , 1 Friend(s)
+  a3              : 0 Follower(s) , 1 Friend(s)
+  a14             : 2 Follower(s) , 0 Friend(s)
+  a13             : 0 Follower(s) , 1 Friend(s)
+  a12             : 1 Follower(s) , 0 Friend(s)
+  a11             : 1 Follower(s) , 0 Friend(s)
+  a10             : 1 Follower(s) , 1 Friend(s)
+  a1              : 0 Follower(s) , 1 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'descending' order
+
+[CENGBOOK] > 
+  a4              : 2 Follower(s) , 1 Friend(s)
+  a14             : 2 Follower(s) , 0 Friend(s)
+  a8              : 1 Follower(s) , 1 Friend(s)
+  a12             : 1 Follower(s) , 0 Friend(s)
+  a11             : 1 Follower(s) , 0 Friend(s)
+  a10             : 1 Follower(s) , 1 Friend(s)
+  a6              : 0 Follower(s) , 1 Friend(s)
+  a5              : 0 Follower(s) , 1 Friend(s)
+  a3              : 0 Follower(s) , 1 Friend(s)
+  a13             : 0 Follower(s) , 1 Friend(s)
+  a1              : 0 Follower(s) , 1 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'ascending' order
+
+[CENGBOOK] > 
+  a6              : 0 Follower(s) , 1 Friend(s)
+  a5              : 0 Follower(s) , 1 Friend(s)
+  a3              : 0 Follower(s) , 1 Friend(s)
+  a13             : 0 Follower(s) , 1 Friend(s)
+  a1              : 0 Follower(s) , 1 Friend(s)
+  a8              : 1 Follower(s) , 1 Friend(s)
+  a12             : 1 Follower(s) , 0 Friend(s)
+  a11             : 1 Follower(s) , 0 Friend(s)
+  a10             : 1 Follower(s) , 1 Friend(s)
+  a4              : 2 Follower(s) , 1 Friend(s)
+  a14             : 2 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'alphabetically' in 'ascending' order
+
+[CENGBOOK] > 
+  a1              : 0 Follower(s) , 1 Friend(s)
+  a10             : 1 Follower(s) , 1 Friend(s)
+  a11             : 1 Follower(s) , 0 Friend(s)
+  a12             : 1 Follower(s) , 0 Friend(s)
+  a13             : 0 Follower(s) , 1 Friend(s)
+  a14             : 2 Follower(s) , 0 Friend(s)
+  a3              : 0 Follower(s) , 1 Friend(s)
+  a4              : 2 Follower(s) , 1 Friend(s)
+  a5              : 0 Follower(s) , 1 Friend(s)
+  a6              : 0 Follower(s) , 1 Friend(s)
+  a8              : 1 Follower(s) , 1 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'alphabetically' in 'descending' order
+
+[CENGBOOK] > 
+  a8              : 1 Follower(s) , 1 Friend(s)
+  a6              : 0 Follower(s) , 1 Friend(s)
+  a5              : 0 Follower(s) , 1 Friend(s)
+  a4              : 2 Follower(s) , 1 Friend(s)
+  a3              : 0 Follower(s) , 1 Friend(s)
+  a14             : 2 Follower(s) , 0 Friend(s)
+  a13             : 0 Follower(s) , 1 Friend(s)
+  a12             : 1 Follower(s) , 0 Friend(s)
+  a11             : 1 Follower(s) , 0 Friend(s)
+  a10             : 1 Follower(s) , 1 Friend(s)
+  a1              : 0 Follower(s) , 1 Friend(s)
+
+[CENGBOOK] > 
+  Have a nice day
+

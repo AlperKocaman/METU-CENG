@@ -1,0 +1,18 @@
+Release 12.4 - WebTalk (M.81d)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=59FF830DE6DA4DE680B3494B4E59E186
+ProjectIteration=9
+
+WebTalk Summary
+----------------
+INFO:WebTalk:2 - WebTalk is enabled.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+WARNING:WebTalk:1 - WebTalk could not create a temp directory to store user setting.
+
+INFO:WebTalk:5 - /home/alper269707/CENG232 FPGA/Lab4/lab4_2/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/12.4/ISE_DS/ISE/data/reports/webtalk_introduction.html

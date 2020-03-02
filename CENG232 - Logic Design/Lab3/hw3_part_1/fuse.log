@@ -1,0 +1,23 @@
+Running: /opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/alper269707/CENG232 FPGA/Lab3/hw3_part_1/testbench_ic1500_isim_beh.exe -prj /home/alper269707/CENG232 FPGA/Lab3/hw3_part_1/testbench_ic1500_beh.prj work.testbench_ic1500 work.glbl 
+ISim M.81d (signature 0x9ca8bed6)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file \"/home/alper269707/CENG232 FPGA/Lab3/hw3_part_1/lab3_1.v\" into library work
+Analyzing Verilog file \"/home/alper269707/CENG232 FPGA/Lab3/hw3_part_1/testbench_ic1500.v\" into library work
+Analyzing Verilog file \"/opt/Xilinx/12.4/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 69964 KB
+Fuse CPU Usage: 50 ms
+Compiling module af
+Compiling module ic1500
+Compiling module testbench_ic1500
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 Verilog Units
+Built simulation executable /home/alper269707/CENG232 FPGA/Lab3/hw3_part_1/testbench_ic1500_isim_beh.exe
+Fuse Memory Usage: 1154308 KB
+Fuse CPU Usage: 60 ms
+GCC CPU Usage: 300 ms

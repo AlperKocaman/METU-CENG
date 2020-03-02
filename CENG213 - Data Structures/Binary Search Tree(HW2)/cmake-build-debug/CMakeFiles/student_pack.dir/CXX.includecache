@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alper269707/CENG213/hw2/student_pack/main_tpbst.cpp
+iostream
+-
+tpbst.hpp
+/home/alper269707/CENG213/hw2/student_pack/tpbst.hpp
+
+/home/alper269707/CENG213/hw2/student_pack/tpbst.hpp
+iostream
+-
+string
+-
+stack
+-
+list
+-
+

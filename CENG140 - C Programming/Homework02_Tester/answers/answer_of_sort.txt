@@ -1,0 +1,295 @@
+
+*******************************************************************************
+* CengBook                                                                    *
+* by Selim Temizer                                                            *
+*******************************************************************************
+
+*******************************************************************************
+Help                       : Print this menu
+List                       : List all users
+Plot                       : Create a plot of CengBook (requires GraphViz)
+Quit                       : Exit application
+-------------------------------------------------------------------------------
+Register   <user>          : Create a new user and add it to CengBook
+Delete     <user>          : Delete user from CengBook
+Find       <user>          : Search CengBook for user, display user information
+Connect    <user1> <user2> : Add a connection from user1 to user2
+Disconnect <user1> <user2> : Remove connection from user1 to user2
+Path       <user1> <user2> : Find shortest path from user1 to user2
+-------------------------------------------------------------------------------
+Sort <abc|pop> <asc|desc>  : Sort all users (alphabetically or by popularity)
+*******************************************************************************
+
+[CENGBOOK] > 
+  Incorrect number of arguments provided for the command 'Sort'!
+
+[CENGBOOK] > 
+  Invalid sort criterion 'ashd'!
+  Invalid sort order 'ahsd'!
+
+[CENGBOOK] > 
+  Invalid sort criterion 'ABC'!
+  Invalid sort order 'ASC'!
+
+[CENGBOOK] > 
+  Invalid sort criterion 'POP'!
+  Invalid sort order 'ASC'!
+
+[CENGBOOK] > 
+  Invalid sort criterion 'ABC'!
+  Invalid sort order 'DESC'!
+
+[CENGBOOK] > 
+  Invalid sort criterion 'POP'!
+  Invalid sort order 'DESC'!
+
+[CENGBOOK] > 
+  CengBook sorted 'alphabetically' in 'ascending' order
+
+[CENGBOOK] > 
+  CengBook sorted 'alphabetically' in 'descending' order
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'ascending' order
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'descending' order
+
+[CENGBOOK] > 
+  CengBook is empty
+
+[CENGBOOK] > 
+  User 'a' registered successfully
+
+[CENGBOOK] > 
+  User 'b' registered successfully
+
+[CENGBOOK] > 
+  User 'c' registered successfully
+
+[CENGBOOK] > 
+  User 'd' registered successfully
+
+[CENGBOOK] > 
+  User 'e' registered successfully
+
+[CENGBOOK] > 
+  a               : 0 Follower(s) , 0 Friend(s)
+  b               : 0 Follower(s) , 0 Friend(s)
+  c               : 0 Follower(s) , 0 Friend(s)
+  d               : 0 Follower(s) , 0 Friend(s)
+  e               : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'alphabetically' in 'ascending' order
+
+[CENGBOOK] > 
+  a               : 0 Follower(s) , 0 Friend(s)
+  b               : 0 Follower(s) , 0 Friend(s)
+  c               : 0 Follower(s) , 0 Friend(s)
+  d               : 0 Follower(s) , 0 Friend(s)
+  e               : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'alphabetically' in 'descending' order
+
+[CENGBOOK] > 
+  e               : 0 Follower(s) , 0 Friend(s)
+  d               : 0 Follower(s) , 0 Friend(s)
+  c               : 0 Follower(s) , 0 Friend(s)
+  b               : 0 Follower(s) , 0 Friend(s)
+  a               : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  User 'b' successfully connected to user 'd'
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'ascending' order
+
+[CENGBOOK] > 
+  e               : 0 Follower(s) , 0 Friend(s)
+  c               : 0 Follower(s) , 0 Friend(s)
+  b               : 0 Follower(s) , 1 Friend(s)
+  a               : 0 Follower(s) , 0 Friend(s)
+  d               : 1 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'descending' order
+
+[CENGBOOK] > 
+  d               : 1 Follower(s) , 0 Friend(s)
+  e               : 0 Follower(s) , 0 Friend(s)
+  c               : 0 Follower(s) , 0 Friend(s)
+  b               : 0 Follower(s) , 1 Friend(s)
+  a               : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  User 'd' successfully connected to user 'b'
+
+[CENGBOOK] > 
+  d               : 1 Follower(s) , 1 Friend(s)
+  e               : 0 Follower(s) , 0 Friend(s)
+  c               : 0 Follower(s) , 0 Friend(s)
+  b               : 1 Follower(s) , 1 Friend(s)
+  a               : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'ascending' order
+
+[CENGBOOK] > 
+  e               : 0 Follower(s) , 0 Friend(s)
+  c               : 0 Follower(s) , 0 Friend(s)
+  a               : 0 Follower(s) , 0 Friend(s)
+  d               : 1 Follower(s) , 1 Friend(s)
+  b               : 1 Follower(s) , 1 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'descending' order
+
+[CENGBOOK] > 
+  d               : 1 Follower(s) , 1 Friend(s)
+  b               : 1 Follower(s) , 1 Friend(s)
+  e               : 0 Follower(s) , 0 Friend(s)
+  c               : 0 Follower(s) , 0 Friend(s)
+  a               : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  User 'c' successfully connected to user 'a'
+
+[CENGBOOK] > 
+  User 'c' successfully connected to user 'b'
+
+[CENGBOOK] > 
+  Connection to self is not allowed!
+
+[CENGBOOK] > 
+  User 'c' successfully connected to user 'd'
+
+[CENGBOOK] > 
+  User 'c' successfully connected to user 'e'
+
+[CENGBOOK] > 
+  d               : 2 Follower(s) , 1 Friend(s)
+  b               : 2 Follower(s) , 1 Friend(s)
+  e               : 1 Follower(s) , 0 Friend(s)
+  c               : 0 Follower(s) , 4 Friend(s)
+  a               : 1 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'ascending' order
+
+[CENGBOOK] > 
+  c               : 0 Follower(s) , 4 Friend(s)
+  e               : 1 Follower(s) , 0 Friend(s)
+  a               : 1 Follower(s) , 0 Friend(s)
+  d               : 2 Follower(s) , 1 Friend(s)
+  b               : 2 Follower(s) , 1 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'descending' order
+
+[CENGBOOK] > 
+  d               : 2 Follower(s) , 1 Friend(s)
+  b               : 2 Follower(s) , 1 Friend(s)
+  e               : 1 Follower(s) , 0 Friend(s)
+  a               : 1 Follower(s) , 0 Friend(s)
+  c               : 0 Follower(s) , 4 Friend(s)
+
+[CENGBOOK] > 
+  User 'a' successfully connected to user 'c'
+
+[CENGBOOK] > 
+  User 'b' successfully connected to user 'c'
+
+[CENGBOOK] > 
+  Connection to self is not allowed!
+
+[CENGBOOK] > 
+  User 'd' successfully connected to user 'c'
+
+[CENGBOOK] > 
+  User 'e' successfully connected to user 'c'
+
+[CENGBOOK] > 
+  d               : 2 Follower(s) , 2 Friend(s)
+  b               : 2 Follower(s) , 2 Friend(s)
+  e               : 1 Follower(s) , 1 Friend(s)
+  a               : 1 Follower(s) , 1 Friend(s)
+  c               : 4 Follower(s) , 4 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'ascending' order
+
+[CENGBOOK] > 
+  e               : 1 Follower(s) , 1 Friend(s)
+  a               : 1 Follower(s) , 1 Friend(s)
+  d               : 2 Follower(s) , 2 Friend(s)
+  b               : 2 Follower(s) , 2 Friend(s)
+  c               : 4 Follower(s) , 4 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'descending' order
+
+[CENGBOOK] > 
+  c               : 4 Follower(s) , 4 Friend(s)
+  d               : 2 Follower(s) , 2 Friend(s)
+  b               : 2 Follower(s) , 2 Friend(s)
+  e               : 1 Follower(s) , 1 Friend(s)
+  a               : 1 Follower(s) , 1 Friend(s)
+
+[CENGBOOK] > 
+  User 'c' is removed from friends of user 'd'
+  User 'c' is removed from friends of user 'b'
+  User 'c' is removed from friends of user 'e'
+  User 'c' is removed from friends of user 'a'
+  User 'c' is discounted from followers of user 'a'
+  User 'c' is discounted from followers of user 'b'
+  User 'c' is discounted from followers of user 'd'
+  User 'c' is discounted from followers of user 'e'
+  User 'c' is deleted from CengBook
+
+[CENGBOOK] > 
+  d               : 1 Follower(s) , 1 Friend(s)
+  b               : 1 Follower(s) , 1 Friend(s)
+  e               : 0 Follower(s) , 0 Friend(s)
+  a               : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'ascending' order
+
+[CENGBOOK] > 
+  e               : 0 Follower(s) , 0 Friend(s)
+  a               : 0 Follower(s) , 0 Friend(s)
+  d               : 1 Follower(s) , 1 Friend(s)
+  b               : 1 Follower(s) , 1 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'by popularity' in 'descending' order
+
+[CENGBOOK] > 
+  d               : 1 Follower(s) , 1 Friend(s)
+  b               : 1 Follower(s) , 1 Friend(s)
+  e               : 0 Follower(s) , 0 Friend(s)
+  a               : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'alphabetically' in 'ascending' order
+
+[CENGBOOK] > 
+  a               : 0 Follower(s) , 0 Friend(s)
+  b               : 1 Follower(s) , 1 Friend(s)
+  d               : 1 Follower(s) , 1 Friend(s)
+  e               : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  CengBook sorted 'alphabetically' in 'descending' order
+
+[CENGBOOK] > 
+  e               : 0 Follower(s) , 0 Friend(s)
+  d               : 1 Follower(s) , 1 Friend(s)
+  b               : 1 Follower(s) , 1 Friend(s)
+  a               : 0 Follower(s) , 0 Friend(s)
+
+[CENGBOOK] > 
+  Have a nice day
+

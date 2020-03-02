@@ -1,0 +1,14 @@
+conv: Version = convolution() function:
+Dim		32	64	128	256	512	Mean
+Your CPEs	36.1	46.8	52.7	55.4	57.2
+Baseline CPEs	185.9	241.4	272.4	296.1	315.3
+Speedup		5.2	5.2	5.2	5.3	5.5	5.3
+
+Multip: Version = matrix_multiplication() function:
+Dim		32	64	128	256	512	Mean
+Your CPEs	33.0	57.6	119.3	227.6	442.3
+Baseline CPEs	141.7	306.8	642.5	1388.7	3373.7
+Speedup		4.3	5.3	5.4	6.1	7.6	5.6
+
+----------------------------------------------------
+

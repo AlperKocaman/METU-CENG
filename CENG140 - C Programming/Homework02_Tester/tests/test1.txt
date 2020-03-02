@@ -1,0 +1,153 @@
+register a1
+register a2
+register a3
+register a4
+register a5
+register a6
+register a7
+register a8
+register a9
+register a10
+register a11
+register a12
+register a13
+list
+connect a1 a2
+connect a1 a3
+connect a1 a4
+connect a1 a5
+connect a1 a6
+connect a1 a7
+connect a1 a8
+connect a1 a9
+connect a1 a10
+connect a1 a11
+connect a1 a12
+connect a1 a13
+list
+sort abc asc
+list
+sort abc desc
+list 
+connect a2 a1
+connect a3 a1
+connect a4 a1
+connect a5 a1
+connect a6 a1
+connect a7 a1
+connect a8 a1
+connect a9 a1
+connect a10 a1
+connect a11 a1
+connect a12 a1
+connect a13 a1
+list 
+sort abc asc
+list
+sort abc desc
+list
+sort pop asc
+list
+sort pop desc
+list
+delete a1
+connect a2 a3
+connect a2 a3
+connect a2 a4
+connect a2 a5
+connect a2 a6
+connect a2 a7
+connect a2 a8
+connect a2 a9
+connect a2 a10
+connect a2 a11
+list
+sort pop asc
+list
+sort pop desc
+list
+connect a3 a2
+connect a4 a3
+connect a4 a3
+connect a4 a4
+connect a4 a5
+connect a4 a6
+connect a4 a7
+list 
+sort pop asc
+list
+sort pop desc
+list
+connect a13 a2
+connect a13 a3
+connect a13 a4
+connect a13 a5
+connect a13 a6
+connect a13 a7
+connect a13 a8
+connect a13 a9
+list
+sort pop asc
+list
+sort pop desc
+list
+sort abc asc
+list
+sort abc desc
+list
+register a1
+list
+sort abc asc
+list
+register a
+list
+sort abc asc
+list
+connect a1 a
+connect a2 a1
+connect a3 a2
+connect a4 a3
+connect a5 a4
+connect a6 a5
+connect a7 a6
+connect a8 a7
+connect a9 a8
+connect a10 a9
+connect a11 a10
+connect a12 a11
+connect a13 a12
+connect a a13
+connect a4 a13
+connect a7 a1
+connect a6 a9
+connect a5 a11
+connect a3 a12
+connect a10 a8
+connect a12 a5
+connect a10 a2
+connect a9 a5
+connect a a4
+connect a12 a
+connect a11 a12
+connect a3 a8
+path a a13
+path a13 a
+path a1 a8
+path a9 a13
+path a12 a13
+path a13 a12
+path a4 a11
+path a6 a5
+path a5 a7
+path a4 a1
+quit
+
+
+
+
+
+
+
+
+
+

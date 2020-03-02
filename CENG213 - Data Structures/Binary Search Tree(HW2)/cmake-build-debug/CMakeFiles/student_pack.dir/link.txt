@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/student_pack.dir/main_tpbst.cpp.o  -o student_pack 

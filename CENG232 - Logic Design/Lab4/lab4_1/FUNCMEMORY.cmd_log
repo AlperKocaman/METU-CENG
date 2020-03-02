@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/alper269707/CENG232 FPGA/Lab4/lab4_1/FUNCMEMORY.xst" -ofn "/home/alper269707/CENG232 FPGA/Lab4/lab4_1/FUNCMEMORY.syr" 

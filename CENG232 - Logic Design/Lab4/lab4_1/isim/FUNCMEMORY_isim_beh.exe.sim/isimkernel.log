@@ -1,0 +1,29 @@
+Command line:
+   FUNCMEMORY_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  44207
+
+Tue Apr 24 01:35:09 2018
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 156.811 Meg
+
+ Total Signals          : 24
+ Total Nets             : 114
+ Total Signal Drivers   : 23
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 28
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 681
+Total Line Count : 101
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 232.313 Meg
+
+Tue Apr 24 01:35:52 2018
+
