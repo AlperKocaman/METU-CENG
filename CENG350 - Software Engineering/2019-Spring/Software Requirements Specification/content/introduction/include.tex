@@ -1,0 +1,62 @@
+\chapter{Introduction}
+\label{ch:intro}
+
+This document presents the smart store project which aims to make the shopping process easier and efficient for everyone. This document aims to give the related information needed to build the system with a planned and powerful way. The reader should be aware of the sections she/he needs refer to and investigate the document regarding the IEEE standards\cite{cite:ieee_2011_standards}, as well as having general knowledge on UML diagrams \cite{cite:booch_2004}\cite{cite:booch_2005}\cite{cite:siau_2007} and software design background. The standards in this book are mostly taken from the book of Sommerville \cite{cite:software_engineering_10}, any discrepancy should be cleared with the related section of the book.
+
+
+\section{Purpose of the System}
+The purpose of this project is to build the smart store project, namely "Amazon Go" \cite{cite:amazon_go_official}. "Amazon Go" project is a smart store project launched by Amazon whose objective is to present better, faster, and smarter shopping for everyone. In order to increase the automation along with the efficient use of resources, this project uses IoT and AI technologies to process data that come from sensors and cameras. This project diminishes the human error and inefficiency in the shopping process.
+
+\section{Scope}
+
+%Describe the scope of the software under consideration by
+%a) Identifying the software product(s) to be produced by name (e.g., Host DBMS, Report Generator, etc.);
+%b) Explaining what the software product(s) will do;
+%c) Describing the application of the software being specified, including relevant benefits, objectives, and
+%goals;
+%d) Being consistent with similar statements in higher-level specifications (e.g., the system requirements
+%specification), if they exist
+
+This smart store project's aim is to provide a better, faster and safer environment for everyone in the shopping process as well as using resources efficiently. In order to
+achieve such an environment for Amazon Go stores, the project shall have lots of
+coordinated hardware and software components which are described below explicitly.
+
+\begin{itemize}
+    \item Since Amazon Go system needed to be maintained and improved, this system should have a technical staff. Objectives of this group will be explained in the related section.
+    \item This technical staff group will have an interface to analyze system efficiently.
+    \item System will have different kind of users. Thus, system will have store staff interface, customer interface and supplier interface as well. 
+    \item Project will have lots of sensors/cameras that are scattered along store. In a very general view, these sensors provide the connection between customers and the system processing units.
+    \item Project will have a great computational power since real time processing of incoming video stream is not an easy task.
+    \item To process incoming data from both sensors and camera, project will have deep learning\&computer vision methods. Sensor fusion algorithms will be used as well.
+    \item Project will have a database server running on the internal machines. These database table will be created with encryption methods.
+    \item Lots of data needed to be transmitted in the system. Therefore, project will have connections between components. These connections should be trustworthy.
+\end{itemize}
+
+By this software, customers will use smart store like their refrigerators or their storage. They just come, take what they want and go out. There are no lines or any checkouts. It will be a huge benefit for customers. All of this huge work is done by automatizing the shopping process and making the store smarter.
+
+
+\input{content/introduction/system_overview}
+\section{Definitions}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ | l | p{10cm} |}
+    \hline
+    \textbf{Technical Staff}    & Person whose job is related to “information technology”. \\
+    \hline
+    \textbf{Database}           & Organized collection of data. \\
+    \hline
+    \textbf{HTTPS}      & “Hyper Text Transfer Protocol Secure is a protocol for secure communication over network which is widely used on web.\\
+    \hline
+    \textbf{HTML}             & “Hypertext Markup Language” is the standard markup language for creating web pages and web applications. \\
+    \hline
+    \textbf{SQL}    & "Structured Query Language" is a domain-specific language used in programming and designed for managing data held in a relational database management system. \\
+    \hline
+    \textbf{IoT}         & Internet of Things, a system of interrelated computing devices which have capability to transfer measured data over a network. \\
+    \hline
+    \textbf{TCP/IP}         & One of the main protocols of the Internet protocol suite which provides reliable, ordered, and error-checked delivery \\
+    \hline
+    \end{tabular}
+    \label{tab:defitinions}
+    \caption{Definitions Table}
+\end{table}

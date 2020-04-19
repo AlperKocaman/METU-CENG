@@ -1,0 +1,105 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Documenclass 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,oneside,titlepage]{report}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{complexity}
+
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{a4wide}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[tablegrid,nochapter]{vhistory}
+\usepackage[nottoc]{tocbibind}
+\usepackage[toc,page]{appendix}
+\usepackage{pdfpages}
+\usepackage[rightcaption]{sidecap}
+\usepackage{cite}
+\usepackage[]{acronym}
+\usepackage[pdftex,scale={.8,.8}]{geometry}
+\usepackage{layout}
+\usepackage{subfigure}
+\usepackage[toc]{glossaries}
+\usepackage[left,pagewise,modulo]{lineno}
+\usepackage[pdftex,colorlinks=false,hidelinks,pdfstartview=FitV]{hyperref}
+\usepackage{metainfo}
+\usepackage[pagestyles,raggedright]{titlesec}
+\usepackage{etoolbox}
+\usepackage{
+	array, 
+	booktabs,
+	dcolumn,
+	rotating,
+	shortvrb,
+	units,
+	url,
+	lastpage,
+	longtable,
+	lscape,
+	qtree,
+	skmath,	
+}
+
+\usepackage{listings}
+\usepackage{color}
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+\usepackage{inconsolata}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{.5\baselineskip}
+
+\input{base/metadata}
+
+\AtBeginDocument{
+	\maketitle
+	\thispagestyle{empty}
+}
+
+% header
+\patchcmd{\chapter}{plain}{short}{}{}
+\newpagestyle{long}{%
+	\sethead[\thepage][][\chaptername\ \thechapter:\ \chaptertitle]{\chaptername\ \thechapter:\ \chaptertitle}{}{\thepage}
+	\headrule
+}
+
+\newpagestyle{short}{%
+	\sethead[\thepage][][]{}{}{\thepage}
+	\headrule
+}
+\begin{document}
+
+\pagenumbering{roman}
+\DeclareGraphicsExtensions{.pdf,.jpg,.png}
+\pagestyle{short}
+
+
+
+\newpage
+\tableofcontents
+
+\input{base/history}
+
+\listoffigures
+
+\listoftables
+
+
+\pagestyle{long}
+
+\pagenumbering{arabic}
+
+\include{content/content}
+
+\end{document}

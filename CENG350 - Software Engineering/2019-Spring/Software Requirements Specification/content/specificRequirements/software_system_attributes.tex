@@ -1,0 +1,42 @@
+\section{Software System Attributes}
+The requirements are given in special titles which do matter in the concurrent world. Laws, customer wants and customer satisfaction are the main concerns of this design. More information is available in the former sections where performance and usability is explain. This section is devoted to more background and more general system properties.
+
+\subsection{Reliability}
+Reliable operation is one of the most important part of this project since the environment is very competitive and people are free to not use Amazon Go. Therefore, many requirements are to be satisfied for reliable operation of the system.
+
+\begin{itemize}
+    \item System shall be free of bugs and software dilemmas.
+    \item System reliability should be provided by many servers across the world and droplets that manage the traffic so that no overload occurs on the system.
+    \item Any bug should be resolved as quickly as possible without interrupting customer experience. 
+    \item Any error occurred in stores should be immediately reported to the store staff.
+    \item Any error occurred in stores shall be reported to the store staff as soon as possible.
+    \item Any error occurred in stores shall be reported to the general report center of Amazon Go.
+\end{itemize}
+
+
+\subsection{Availability}
+Availability, like in reliability, determines the system performance and user experience as many external players in the market. Therefore, following regulations and requirements are put in order to provide completely successful system. These requirements should be considered in the context of business environment, and all of the measures should consider the market environment as well.
+
+\begin{itemize}
+    \item The mobile system should be available 0.99 of the time. Mobile system includes transactions, logging into app and store and giving feedback.
+    \item Call center should be available 0.99 of the time. When excessive calls are directed to the call center, automatically new customer representative should be included in the system.
+    \item At least 1 server shall be online anytime for the time for emergency payments and emergency messages.
+    \item Store stuff should be available in case of a customer needs it 0.9 of the time.
+\end{itemize}
+
+
+
+\subsection{Security}
+Security is another aspect of the software design. To whom it may concerns should understand the laws properly and consider the possible security errors. She/he should consider the other system aspects and laws accordingly in addition to knowing ethics for customer privacy and secrecy.
+
+
+\begin{itemize}
+    \item Real people(store staff, technical people, etc.) shall be able to see user data that is not anonymized.
+    \item Credit card details shall be stored according to PCI rules.
+    \item Credit card CVV shall not be stored in any ways.
+    \item Password shall only be stored in hash form, even when they are encrypted\cite{cite:PCI_rules}.
+    \item Username and e-mail address shall be encrypted with AES\cite{cite:encryption_algorithms}.
+    \item Two factor authentication shall be mandatory for registered users.
+    \item The number of server TCP/UDP ports should be minimal to reduce the risk.
+    \item All traffic between server and other actors should be symmetrically encrypted. In case of any exceptional operation, the system shall use asymmetrical encryption which should be as secure as RSA with 4096 bit key size.
+\end{itemize}
